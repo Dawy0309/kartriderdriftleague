@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+}
+
+#Q{
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: red;
+    text-shadow: 3px 3px 3px darkgray;
+}
+
+input{
+    width: 200px;
+    color: black;
+    background-color: lightgoldenrodyellow;
+}
+
+li{
+    text-align: left;   
+}
+
+#R{
+    width: 85px;
+    background-color: pink;
+}
+
+#B{
+    font-family: Microsoft JhengHei;
+	font-size: 35px;
+    font-weight: bold;
+    color: white;
+	background-color: orange;
+	height: 50px;
+    text-shadow: 3px 3px 3px darkgray;
+}
+
+#D{
+    width: 115px;
+    background-color: floralwhite;
+}
+
+#img{
+    width:350px;
+    height:300px;
+}
