@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="animation.css"> -->
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>KDL | Fan-Made Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="dist/rankData.js"></script>
     <script>
         $(document).on('click', '.option ul li', function () {
             $(this).addClass('active').siblings().removeClass('active')
@@ -32,334 +37,194 @@
             }
         }
     </script>
-    <script src="trackData.js"></script>
 </head>
 
-<body class="bgImg moveUp">
-    <nav class="navbar-expand-lg navbar-dark bg-dark">
-        <header class="justify-content-around px-5">
-            <a href="index.html" class="logo">Fan-Made</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li><a href="index.html" class="">Home</a></li>
-                    <li><a href="#" class="">About</a></li>
-                    <li><a href="#" class="active">Record</a></li>
-                    <li><a href="#" class="">Contact</a></li>
-                </ul>
+<body class="moveUp bgImg">
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex">
+            <div class="container-fluid container option">
+                <a href="index.html" class="logo navbar-brand">Fan-Made</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="" href="index.html" >Home</a></li>
+                        <li class="nav-item"><a class="active" href="rank.html" aria-current="page">Rank</a></li>
+                        <li class="nav-item"><a class="" href="record.html">Record</a></li>
+                        <li class="nav-item"><a class="" href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </header>
-    </nav>
+        </nav>
+    </header>
     <span class="row justify-content-center mx-auto m-5">
-        <div class="row option text-center mt-5">
-            <h1 class="text-light fw-bold mt-5 display-3">Track Record</h1>
+        <div class="row option text-center m-5">
+            <h1 class="text-light fw-bold display-3">Team Ranking</h1>
         </div>
     </span>
-    <!-- <img src="KDL_logo.png" id="imgCenter"> -->
-    <!-- <section class="overflow-hidden" id="secBanner">
-        <h2 id="text">Preseason 2</h2>
-        <a href="#explore" id="btn">Explore</a>
-        <img src="" id="imgFront">
-    </section> -->
-    <main class="bg d-block container-fluid" id="explore">
+
+    <main class="bg d-block container-fluid text-light" id="explore">
         <span class="row justify-content-center mx-auto">
-            <div class="row option">
-                <ul>
-                    <li class="active"><a href="javascript:void(0);" class="" onclick="showInfo(1)" id="Cteam">Team</a></li>
-                    <li class=""><a href="javascript:void(0);" class="" onclick="showInfo(2)" id="Cindi">Individual</a></li>
-                </ul>
+            <div class="row option mt-3 text-center">
+                <p id="updateTime"></p>
+                <!-- <ul>
+                    <li class="active"><a href="javascript:void(0);" class="" onclick="showInfo(1)" id="Cteam">Team</a>
+                    </li>
+                    <li class=""><a href="javascript:void(0);" class="" onclick="showInfo(2)" id="Cindi">Individual</a>
+                    </li>
+                </ul> -->
             </div>
         </span>
-        <div class="col">
-            <p class="text-light text-center d-flex justify-content-center" id="updateTime">-</p>
-        </div>
-        <!-- Team Record -->
-        <div class="moveUp" id="team">
-            <span class="bgSpeed row mx-auto w-75">
-                <div class="col">
-                    <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Speed Track</h4>
+        <span class="row justify-content-start mx-auto text-light">
+            <!-- <div class="bg col-10 mx-auto d-none d-lg-block">
+                <div class="row justify-content-start text-center mx-auto align-items-center fw-bold">
+                    <div class="col">Ranking</div>
+                    <div class="col-5">TEAM</div>
+                    <div class="col">WIN</div>
+                    <div class="col">LOSE</div>
+                    <div class="col">SET</div>
+                    <div class="col">ROUND</div>
                 </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack0_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack0">Track</p>
-                        <p class="fw-bold" id="speedTrack0_record" style="color: #ffee00;">-</p>
+                <div class="row justify-content-center text-center mx-auto align-items-center">
+                    <div class="col">1</div>
+                    <div class="col-5">
+                        <img src="Team/Unknown.png" class="w-25 d-inline"  id="teamRank0_img">
+                        <p class="d-inline" id="teamRank0">name</p>
                     </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack1_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack1">Track</p>
-                        <p class="fw-bold" id="speedTrack1_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack2_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack2">Track</p>
-                        <p class="fw-bold" id="speedTrack2_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack3_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack3">Track</p>
-                        <p class="fw-bold" id="speedTrack3_record" style="color: #ffee00;">-</p>
-                    </div>
+                    <div class="col" id="teamRank0_win">10</div>
+                    <div class="col" id="teamRank0_lose">10</div>
+                    <div class="col" id="teamRank0_set">10</div>
+                    <div class="col" id="teamRank0_round">10</div>
                 </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack4_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack4">Track</p>
-                        <p class="fw-bold" id="speedTrack4_record" style="color: #ffee00;">-</p>
+                <div class="row justify-content-center text-center mx-auto align-items-center">
+                    <div class="col">1</div>
+                    <div class="col-5 justify-content-start">
+                        <img src="Team/Unknown.png" class="w-25 d-inline"  id="teamRank1_img">
+                        <p class=" d-inline" id="teamRank1">name</p>
                     </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack5_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack5">Track</p>
-                        <p class="fw-bold" id="speedTrack5_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack6_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack6">Track</p>
-                        <p class="fw-bold" id="speedTrack6_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack7_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack7">Track</p>
-                        <p class="fw-bold" id="speedTrack7_record" style="color: #ffee00;">-</p>
-                    </div>
+                    <div class="col" id="teamRank1_win">10</div>
+                    <div class="col" id="teamRank1_lose">10</div>
+                    <div class="col" id="teamRank1_set">10</div>
+                    <div class="col" id="teamRank1_round">10</div>
                 </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack8_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack8">Track</p>
-                        <p class="fw-bold" id="speedTrack8_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack9_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack9">Track</p>
-                        <p class="fw-bold" id="speedTrack9_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack10_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack10">Track</p>
-                        <p class="fw-bold" id="speedTrack10_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="speedTrack11_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="speedTrack11">Track</p>
-                        <p class="fw-bold" id="speedTrack11_record" style="color: #ffee00;">-</p>
-                    </div>
-                </div>
-            </span>
+            </div> -->
 
-            <span class="bgItem row mx-auto w-75 mt-5">
-                <div class="col">
-                    <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Item Track</h4>
+            <div class="col-lg-8 mx-auto d-flex">
+                <table class="table table-dark table-responsive text-center justify-content-startmx-auto">
+                    <thead>
+                      <tr>
+                        <th scope="col">NO.</th>
+                        <th scope="col">Team</th>
+                        <th scope="col" class="text-warning">W</th>
+                        <th scope="col" class=" text-info fw-bold">L</th>
+                        <th scope="col">S</th>
+                        <th scope="col">R</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td class="text-start"><img src="Team/kdf.png" class="mw-60"  id="teamRank0_img">
+                            <p class="d-inline" id="teamRank0">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank0_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank0_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank0_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank0_round">0</p></td>
+                      </tr>
+                      <tr>
+                        <th scope="col">2</th>
+                        <td class="text-start"><img src="Team/kdf.png" class="mw-60"  id="teamRank1_img">
+                            <p class="d-inline" id="teamRank1">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank1_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank1_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank1_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank1_round">0</p></td>
+                      </tr>
+                      <tr>
+                        <th scope="col">3</th>
+                        <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank2_img">
+                            <p class="d-inline" id="teamRank2">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank2_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank2_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank2_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank2_round">0</p></td>
+                      </tr>
+                      <tr>
+                        <th scope="col">4</th>
+                        <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank3_img">
+                            <p class="d-inline" id="teamRank3">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank3_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank3_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank3_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank3_round">0</p></td>
+                      </tr> 
+                      <tr>
+                        <th scope="col">5</th>
+                        <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank4_img">
+                            <p class="d-inline" id="teamRank4">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank4_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank4_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank4_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank4_round">0</p></td>
+                      </tr> 
+                      <tr>
+                        <th scope="col">6</th>
+                        <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank5_img">
+                            <p class="d-inline" id="teamRank5">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank5_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank5_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank5_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank5_round">0</p></td>
+                      </tr> 
+                      <tr>
+                        <th scope="col">7</th>
+                        <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank6_img">
+                            <p class="d-inline" id="teamRank6">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank6_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank6_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank6_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank6_round">0</p></td>
+                      </tr> 
+                      <tr>
+                        <th scope="col">8</th>
+                        <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank7_img">
+                            <p class="d-inline" id="teamRank7">-</p></td>
+                        <td><p class="d-inline text-warning fw-bold" id="teamRank7_win">0</p></td>
+                        <td><p class="d-inline text-info fw-bold" id="teamRank7_lose">0</p></td>
+                        <td><p class="d-inline" id="teamRank7_set">0</p></td>
+                        <td><p class="d-inline" id="teamRank7_round">0</p></td>
+                      </tr>                       
+                    </tbody>
+                  </table>
+                <!-- <div class="row justify-content-start text-center mx-auto align-items-center fw-bold">
+                    <div class="col-1">R</div>
+                    <div class="col-7">T</div>
+                    <div class="col">W</div>
+                    <div class="col">L</div>
                 </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack0_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack0">Track</p>
+                <div class="row justify-content-center text-center mx-auto align-items-center">
+                    <div class="col-1">1</div>
+                    <div class="col-7">
+                        <img src="Team/lsb.png" class="w-25 d-inline"  id="teamRank0_img">
+                        <p class="d-inline" id="teamRank0"></p>
                     </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack1_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack1">Track</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack2_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack2">Track</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack3_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack3">Track</p>
-                    </div>
+                    <div class="col" id="teamRank0_win">10</div>
+                    <div class="col" id="teamRank0_lose">10</div>
                 </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack4_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack4">Track</p>
+                <div class="row justify-content-center text-center mx-auto align-items-center">
+                    <div class="col-1">1</div>
+                    <div class="col-7 justify-content-start">
+                        <img src="Team/Unknown.png" class="w-25 d-inline"  id="teamRank1_img">
+                        <p class="d-none" id="teamRank1">name</p>
                     </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack5_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack5">Track</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack6_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack6">Track</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack7_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack7">Track</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack8_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack8">Track</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack9_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack9">Track</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack10_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack10">Track</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="itemTrack11_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="itemTrack11">Track</p>
-                    </div>
-                </div>
-            </span>
-        </div>
-
-        <!-- Individual MATCH -->
-        <!-- Speed Record -->
-        <div class="moveUp" id="individual">
-            <span class="bgSpeed row mx-auto w-75">
-                <div class="col">
-                    <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Speed Track</h4>
-                </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack0_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack0">Track</p>
-                        <p class="fw-bold" id="indTrack0_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack1_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack1">Track</p>
-                        <p class="fw-bold" id="indTrack1_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack2_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack2">Track</p>
-                        <p class="fw-bold" id="indTrack2_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack3_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack3">Track</p>
-                        <p class="fw-bold" id="indTrack3_record" style="color: #ffee00;">-</p>
-                    </div>
-                </div>
-            </span>
-            <span class="bgSpeed row mx-auto w-75">
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack4_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack4">Track</p>
-                        <p class="fw-bold" id="indTrack4_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack5_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack5">Track</p>
-                        <p class="fw-bold" id="indTrack5_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack6_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack6">Track</p>
-                        <p class="fw-bold" id="indTrack6_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack7_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack7">Track</p>
-                        <p class="fw-bold" id="indTrack7_record" style="color: #ffee00;">-</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center text-center mx-auto">
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack8_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack8">Track</p>
-                        <p class="fw-bold" id="indTrack8_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack9_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack9">Track</p>
-                        <p class="fw-bold" id="indTrack9_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack10_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack10">Track</p>
-                        <p class="fw-bold" id="indTrack10_record" style="color: #ffee00;">-</p>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center mt-3">
-                        <div class="mb-3">
-                            <img id="indTrack11_img" src="Track/Unknown.png" class="img-fluid">
-                        </div>
-                        <p class="text-light" id="indTrack11">Track</p>
-                        <p class="fw-bold" id="indTrack11_record" style="color: #ffee00;">-</p>
-                    </div>
-                </div>
-            </span>
-        </div>
+                    <div class="col" id="teamRank1_win">10</div>
+                    <div class="col" id="teamRank1_lose">10</div>
+                </div> -->
+                
+            </div>
+        </span>
     </main>
     <footer class="bg d-block container-fluid p-5">
         <div class="col container  justify-content-center">
@@ -368,24 +233,21 @@
                 information.
             </p>
             <br>
-            <p class="text-center" style="background-color: #fff;"><img src="nexon.png" width="80px"> | © NEXON Korea
+            <p class="text-center" style="background-color: #fff;"><img src="img/nexon.png" width="80px"> | © NEXON
+                Korea
                 Corporation All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
         var num;
-        for (num = 0; num < 12; num++) {
-            document.getElementById('itemTrack' + num).textContent = itemTrack[num].name;
-            document.getElementById('itemTrack' + num + '_img').src = itemTrack[num].img;
-
-            document.getElementById('speedTrack' + num).textContent = speedTrack[num].name;
-            document.getElementById('speedTrack' + num + '_img').src = speedTrack[num].img;
-            document.getElementById('speedTrack' + num + '_record').textContent = speedTrack[num].record;
-            
-            document.getElementById('indTrack' + num).textContent = indTrack[num].name;
-            document.getElementById('indTrack' + num + '_img').src = indTrack[num].img;
-            document.getElementById('indTrack' + num + '_record').textContent = indTrack[num].record;
+        for (num = 0; num < 8; num++) {
+            document.getElementById('teamRank' + num).textContent = teamRank[num].name;           
+            document.getElementById('teamRank' + num + '_win').textContent = teamRank[num].win;
+            document.getElementById('teamRank' + num + '_lose').textContent = teamRank[num].lose;
+            document.getElementById('teamRank' + num + '_set').textContent = teamRank[num].set;
+            document.getElementById('teamRank' + num + '_round').textContent = teamRank[num].round;
+            document.getElementById('teamRank' + num + '_img').src = teamRank[num].img;
         }
         document.getElementById('updateTime').textContent = updateTime;
     </script>

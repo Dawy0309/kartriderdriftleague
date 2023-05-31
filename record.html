@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/style.css">
-    <!-- <link rel="stylesheet" href="animation.css"> -->
     <title>KDL | Fan-Made Website</title>
-    <script src="/dist/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="dist/trackData.js"></script>
     <script>
         $(document).on('click', '.option ul li', function () {
@@ -38,10 +40,9 @@
 </head>
 
 <body class="moveUp bgImg">
-    <header class="px-5">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex">
             <div class="container-fluid container option">
-                <!-- <header class="justify-content-center px-5"> -->
                 <a href="index.html" class="logo navbar-brand">Fan-Made</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +50,12 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="" href="index.html" aria-current="page">Home</a></li>
-                        <li class="nav-item"><a class="" href="#">About</a></li>
-                        <li class="nav-item"><a class="active" href="#">Record</a></li>
+                        <li class="nav-item"><a class="" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="" href="rank.html">Rank</a></li>
+                        <li class="nav-item"><a class="active" href="record.html" aria-current="page">Record</a></li>
                         <li class="nav-item"><a class="" href="#">Contact</a></li>
                     </ul>
                 </div>
-                <!-- </header> -->
             </div>
         </nav>
     </header>
