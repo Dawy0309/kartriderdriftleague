@@ -107,7 +107,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: linear-gradient(#2b1055, #7597de);
+  background: linear-gradient(#1d225e, #4981fa);
 }
 .logo {
   color: #fff;
