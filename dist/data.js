@@ -13,43 +13,19 @@ var indSunResult = "05/00(Tue.)";
 var Team = [
   {
     name:"LSB",
-    img:"Team/liiv sandbox.png"
+    img:"Team/lsb.png"
   },
   {
-    name:"SNT",
-    img:"Team/sensation.png"
-  },
-  {
-    name:"FNL",
-    img:"Team/FINALE e-sports.png"
-  },
-  {
-    name:"KDF",
-    img:"Team/kwangdong freecs(r).png"
-  },
-  {
-    name:"ROX",
-    img:"Team/rox.png"
-  },
-  {
-    name:"LSB",
-    img:"Team/liiv sandbox.png"
-  },
-  {
-    name:"LSB",
-    img:"Team/liiv sandbox.png"
-  },
-  {
-    name:"SNT",
-    img:"Team/sensation.png"
+    name:"SST",
+    img:"Team/sst.png"
   },
   {
     name:"FNL",
-    img:"Team/FINALE e-sports.png"
+    img:"Team/fnl.png"
   },
   {
     name:"KDF",
-    img:"Team/kwangdong freecs(r).png"
+    img:"Team/kdf.png"
   },
   {
     name:"ROX",
@@ -57,7 +33,23 @@ var Team = [
   },
   {
     name:"LSB",
-    img:"Team/liiv sandbox.png"
+    img:"Team/lsb.png"
+  },
+  {
+    name:"LSB",
+    img:"Team/lsb.png"
+  },
+  {
+    name:"SST",
+    img:"Team/sst.png"
+  },
+  {
+    name:"FNL",
+    img:"Team/fnl.png"
+  },
+  {
+    name:"KDF",
+    img:"Team/kdf.png"
   },
   {
     name:"ROX",
@@ -65,7 +57,15 @@ var Team = [
   },
   {
     name:"LSB",
-    img:"Team/liiv sandbox.png"
+    img:"Team/lsb.png"
+  },
+  {
+    name:"ROX",
+    img:"Team/rox.png"
+  },
+  {
+    name:"LSB",
+    img:"Team/lsb.png"
   }
   
 ];
@@ -73,7 +73,7 @@ var Team = [
 var TeamResult = [
   {
     name:"LSB",
-    img:"Team/liiv sandbox.png",
+    img:"Team/lsb.png",
     score: "2",
   },
   {
@@ -83,27 +83,27 @@ var TeamResult = [
   },
   {
     name:"KDF",
-    img:"Team/kwangdong Freecs(r).png",
+    img:"Team/kdf.png",
     score: "2",
   },
   {
     name:"PLN",
-    img:"Team/planet.png",
+    img:"Team/pln.png",
     score: "0",
   },
   {
-    name:"Aura",
-    img:"Team/aura.png",
+    name:"AU",
+    img:"Team/au.png",
     score: "2",
   },
   {
     name:"RBT",
-    img:"Team/reboot.png",
+    img:"Team/rbt.png",
     score: "1",
   },
   {
     name:"LSB",
-    img:"Team/liiv sandbox.png",
+    img:"Team/lsb.png",
     score: "2",
   },
   {
@@ -113,32 +113,32 @@ var TeamResult = [
   },
   {
     name:"KDF",
-    img:"Team/kwangdong Freecs(r).png",
+    img:"Team/kdf.png",
     score: "2",
   },
   {
     name:"PLN",
-    img:"Team/planet.png",
+    img:"Team/pln.png",
     score: "0",
   },
   {
     name:"AU",
-    img:"Team/aura.png",
+    img:"Team/au.png",
     score: "2",
   },
   {
     name:"RBT",
-    img:"Team/reboot.png",
+    img:"Team/rbt.png",
     score: "1",
   },
   {
     name:"AU",
-    img:"Team/aura.png",
+    img:"Team/au.png",
     score: "2",
   },
   {
     name:"RBT",
-    img:"Team/reboot.png",
+    img:"Team/rbt.png",
     score: "1",
   }
 ];
