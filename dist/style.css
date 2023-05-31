@@ -318,3 +318,9 @@ section img#imgFront {
 #individual {
   display: none;
 }
+.mw-60{
+  max-width: 60px;
+}
+th, td{
+  vertical-align: middle;
+}
