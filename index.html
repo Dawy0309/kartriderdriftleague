@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/style.css">
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).on('click', '.option ul li', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        var num;
+        function showInfo(num) {
+            switch (num) {
+                case 1:
+                    document.getElementById("team").style.display = "block";
+                    document.getElementById("individual").style.display = "none";
+                    break;
+                case 2:
+                    document.getElementById("team").style.display = "none";
+                    document.getElementById("individual").style.display = "block";
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar-expand-lg navbar-dark bg-dark">
+        <header class="justify-content-around p-5">
+            <a href="#" class="logo">Fan-Made</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="">About</a></li>
+                    <li><a href="record.html" class="">Record</a></li>
+                    <li><a href="#" class="">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+    </nav>
+    <img src="img/KDL_logo.png" id="imgCenter">
+    <section class="overflow-hidden" id="secBanner">
+        <video src="img/Gp_ModeMov_02.mp4" id="vdBanner" autoplay loop muted></video>
+        <h2 id="text">Preseason 2</h2>
+        <a href="#explore" id="btn">Explore</a>
+        <img src="" id="imgFront">
+        <!-- <img src="banner.png" id="imgBG"> -->
+        <!-- <img src="" id="imgCenter">    
+        <img src="" id="imgBehind"> -->
+    </section>
+    <main class="bg d-block container-fluid" id="explore">
+        <span class="row justify-content-center mx-auto">
+            <div class="row option">
+                <ul>
+                    <li class="active"><a href="javascript:void(0);" class="" onclick="showInfo(1)" id="Cteam">Team</a>
+                    </li>
+                    <li class=""><a href="javascript:void(0);" class="" onclick="showInfo(2)" id="Cindi">Individual</a>
+                    </li>
+                </ul>
+            </div>
+        </span>
+        <!-- TEAM MATCH -->
+        <!-- Next Match -->
+        <div class="moveUp row mx-auto" id="team">
+            <div class="row mx-auto">
+                <div class="mt-2">
+                    <h2 class="row text-light text-center d-flex justify-content-center text">NEXT MATCH</h2>
+                </div>
+                <!-- Next Match (Sat.) -->
+                <div class="col-12 col-xl-4 mx-auto p-3">
+                    <span class="bgTeam row mx-auto p-3">
+                        <div class="col m-3">
+                            <h5 class="text-light text-center d-flex justify-content-center" id="teamSatMatch">Time
+                            </h5>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="Team0_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team0">Team</h5>
+                            </div>
+                            <div class="col justify-content-center">
+                                <h2 class="text-light">VS</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team1">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="Team1_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="Team2_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team2">Team</h5>
+                            </div>
+                            <div class="col justify-content-center">
+                                <h2 class="text-light">VS</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team3">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="Team3_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <!-- Next Match (Sun.) -->
+                <div class="col-12 col-xl-4 mx-auto p-3 mt-2 mt-lg-0">
+                    <span class="bgTeam row mx-auto p-3">
+                        <div class="col m-3">
+                            <h5 class="text-light text-center d-flex justify-content-center" id="teamSunMatch">Time
+                            </h5>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="Team4_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team4">Team</h5>
+                            </div>
+                            <div class="col justify-content-center">
+                                <h2 class="text-light">VS</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team5">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="Team5_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="Team6_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team6">Team</h5>
+                            </div>
+                            <div class="col justify-content-center">
+                                <h2 class="text-light">VS</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team7">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="Team7_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <!-- Next Match (Wed.) -->
+                <div class="col-12 col-xl-4 mx-auto p-3 mt-2 mt-lg-0">
+                    <span class="bgTeam row mx-auto p-3">
+                        <div class="col m-3">
+                            <h5 class="text-light text-center d-flex justify-content-center" id="teamWedMatch">
+                                Time
+                            </h5>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="Team8_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team8">Team</h5>
+                            </div>
+                            <div class="col justify-content-center">
+                                <h2 class="text-light">VS</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team9">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="Team9_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="Team10_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team10">Team</h5>
+                            </div>
+                            <div class="col justify-content-center">
+                                <h2 class="text-light">VS</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team11">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="Team11_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="Team12_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team12">Team</h5>
+                            </div>
+                            <div class="col justify-content-center">
+                                <h2 class="text-light">VS</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="Team13">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="Team13_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Last Result -->
+            <div class="row mx-auto">
+                <div class="mt-2">
+                    <h2 class="row text-light text-center d-flex justify-content-center text">LAST RESULT</h2>
+                </div>
+                <!-- Last Result (Sat.) -->
+                <div class="col-12 col-xl-4 mx-auto p-3">
+                    <span class="bgTeamResult row p-3 mx-auto">
+                        <div class="col">
+                            <h5 class="text-light text-center d-flex justify-content-center" id="teamSatResult">Time
+                            </h5>
+                        </div>
+                        <div class="row justify-content-center mx-auto">
+                            <div class="col d-flex justify-content-start">
+                                <p class="fw-bold text-warning text-uppercase">win</p>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <p class="fw-bold text-white-50 text-uppercase text-end">lose</p>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="TeamResult0_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult0">Team</h5>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-warning" id="TeamResult0_score">-</h2>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-light text-white-50" id="TeamResult1_score">-</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult1">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="TeamResult1_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="TeamResult2_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult2">Team</h5>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-warning" id="TeamResult2_score">-</h2>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-light text-white-50" id="TeamResult3_score">-</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult3">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="TeamResult3_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <!-- Last Result (Sun.) -->
+                <div class="col-12 col-xl-4 mx-auto p-3 mt-2 mt-lg-0">
+                    <span class="bgTeamResult row p-3 mx-auto">
+                        <div class="col">
+                            <h5 class="text-light text-center d-flex justify-content-center" id="teamSunResult">Time
+                            </h5>
+                        </div>
+                        <div class="row justify-content-center mx-auto">
+                            <div class="col d-flex justify-content-start">
+                                <p class="fw-bold text-warning text-uppercase">win</p>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <p class="fw-bold text-white-50 text-uppercase text-end">lose</p>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="TeamResult4_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult4">Team</h5>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-warning" id="TeamResult4_score">-</h2>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-light text-white-50" id="TeamResult5_score">-</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult5">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="TeamResult5_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="TeamResult6_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult6">Team</h5>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-warning" id="TeamResult6_score">-</h2>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-light text-white-50" id="TeamResult7_score">-</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult7">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="TeamResult7_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <!-- Last Result (Wed.) -->
+                <div class="col-12 col-xl-4 mx-auto p-3 mt-2 mt-lg-0">
+                    <span class="bgTeamResult row p-3 mx-auto">
+                        <div class="col">
+                            <h5 class="text-light text-center d-flex justify-content-center" id="teamWedResult">Time
+                            </h5>
+                        </div>
+                        <div class="row justify-content-center mx-auto">
+                            <div class="col d-flex justify-content-start">
+                                <p class="fw-bold text-warning text-uppercase">win</p>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <p class="fw-bold text-white-50 text-uppercase text-end">lose</p>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="TeamResult8_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult8">Team</h5>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-warning" id="TeamResult8_score">-</h2>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-light text-white-50" id="TeamResult9_score">-</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult9">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="TeamResult9_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="TeamResult10_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult10">Team</h5>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-warning" id="TeamResult10_score">-</h2>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-light text-white-50" id="TeamResult11_score">-</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult11">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="TeamResult11_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <hr class="text-light mt-2">
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col">
+                                <img id="TeamResult12_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult12">Team</h5>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-warning" id="TeamResult12_score">-</h2>
+                            </div>
+                            <div class="col d-inline justify-content-center">
+                                <h2 class="fw-bold text-light text-white-50" id="TeamResult13_score">-</h2>
+                            </div>
+                            <div class="col d-none d-md-flex justify-content-center">
+                                <h5 class="text-light" id="TeamResult13">Team</h5>
+                            </div>
+                            <div class="col">
+                                <img id="TeamResult13_img" src="Team/Unknown.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Individual MATCH -->
+        <!-- Next Match -->
+        <div class="moveUp row mx-auto" id="individual">
+            <div class="row mx-auto">
+                <div class="mt-2">
+                    <h2 class="row text-light text-center d-flex justify-content-center text">NEXT MATCH</h2>
+                </div>
+                <!-- Next Match (Sat.))-->
+                <div class="col col-md-6 mx-auto p-3">
+                    <span class="bgIndividual row mx-auto">
+                        <div class="col mt-4 p-3">
+                            <h4 class="text-light text-center d-flex justify-content-center" id="indSatMatch">
+                                06/12(Sun.) UTC+8 17:00
+                            </h4>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagYellow mb-3">
+                                    <img id="Player0_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player0"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagBlack mb-3">
+                                    <img id="Player1_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player1"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagRed mb-3">
+                                    <img id="Player2_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player2"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagWhite mb-3">
+                                    <img id="Player3_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player3"></h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagPurple mb-3">
+                                    <img id="Player4_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player4"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagGreen mb-3">
+                                    <img id="Player5_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player5"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagBlue mb-3">
+                                    <img id="Player6_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player6"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagOrange mb-3">
+                                    <img id="Player7_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player7"></h5>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <!-- Next Match (Sun.))-->
+                <div class="col col-md-6 mx-auto p-3">
+                    <span class="bgIndividual row mx-auto">
+                        <div class="col p-3">
+                            <h4 class="text-light text-center d-flex justify-content-center mt-4" id="indSunMatch">Time
+                            </h4>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagYellow mb-3">
+                                    <img id="Player8_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player8"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagBlack mb-3">
+                                    <img id="Player9_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player9"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagRed mb-3">
+                                    <img id="Player10_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player10"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagWhite mb-3">
+                                    <img id="Player11_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player11"></h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagPurple mb-3">
+                                    <img id="Player12_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player12"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagGreen mb-3">
+                                    <img id="Player13_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player13"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagBlue mb-3">
+                                    <img id="Player14_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player14"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="bgFlagOrange mb-3">
+                                    <img id="Player15_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="Player15"></h5>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Last Match -->
+            <div class="row mx-auto">
+                <div class="mt-5">
+                    <h2 class="row text-light text-center d-flex justify-content-center text">LAST RESULT</h2>
+                </div>
+                <!-- Last Result (Sat.) -->
+                <div class="col col-md-6 mx-auto p-3">
+                    <span class="bgIndividualResult row mx-auto">
+                        <div class="col p-3">
+                            <h4 class="text-light text-center d-flex justify-content-center" id="indSatResult">Time</h4>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult0_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult0"></h5>
+                                <h5 class="fw-bold mt-2" id="PlayerResult0_score" style="color: #ffee00;"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult1_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult1"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult1_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult2_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult2"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult2_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult3_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult3"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult3_score"></h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult4_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult4"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult4_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult5_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult5"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult5_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult6_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult6"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult6_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult7_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult7"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult7_score"></h5>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <!-- Last Result (Sun.) -->
+                <div class="col col-md-6 mx-auto p-3">
+                    <span class="bgIndividualResult row mx-auto">
+                        <div class="col p-3">
+                            <h4 class="text-light text-center d-flex justify-content-center" id="indSunResult">Time</h4>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult8_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult8"></h5>
+                                <h5 class="fw-bold mt-2" id="PlayerResult8_score" style="color: #ffee00;"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult9_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult9"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult9_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult10_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult10"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult10_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult11_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult11"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult11_score"></h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center text-center mx-auto">
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult12_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult12"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult12_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult13_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult13"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult13_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult14_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult14"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult14_score"></h5>
+                            </div>
+                            <div class="col-6 col-lg-3 text-center mt-3">
+                                <div class="mb-3">
+                                    <img id="PlayerResult15_img" src="Player/Unknown.png" class="img-fluid">
+                                </div>
+                                <h5 class="text-light mt-2" id="PlayerResult15"></h5>
+                                <h5 class="text-light mt-2" id="PlayerResult15_score"></h5>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- <span class="row justify-content-center mx-auto">
+            <div class="w-75">
+                <table class="table text-light text-center align-middle">
+                    <tr>
+                        <th scope="col">RED TEAM</th>
+                        <th scope="col"></th>
+                        <th scope="col"><h4 class="row text-light text-center d-flex justify-content-center">06/12(Sun.) UTC+8 17:00</h4></th>
+                        <th scope="col"></th>
+                        <th scope="col">BLUE TEAM</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                          <th scope="row"><img src="Team/Liiv Sandbox.png" alt=""></th>
+                          <td>Liiv SANDBOX</td>
+                          <td><h2>VS</h2></td>
+                          <td>Sensation</td>
+                          <td><img src="Team/Sensation.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="Team/FINALE e-sports.png" alt=""></th>
+                            <td>FINALE e-sports</td>
+                            <td><h2>VS</h2></td>
+                            <td>KWANGDONG FREECS</td>
+                            <td><img src="Team/KWANGDONG FREECS(R).png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="Team/Aura.png" alt=""></th>
+                            <td>Aura</td>
+                            <td><h2>VS</h2></td>
+                            <td>ROX</td>
+                            <td><img src="Team/Rox.png" alt=""></td>
+                        </tr>
+                        
+                      </tbody>
+                </table> 
+            </div> 
+        </span>               -->
+    </main>
+    <footer class="bg d-block container-fluid p-5">
+        <div class="col container  justify-content-center">
+            <p class="text-light text-center">
+                This is a <b>fan-made</b> website, please follow the announcement on the official website for all
+                information.
+            </p>
+            <br>
+            <p class="text-center" style="background-color: #fff;"><img src="nexon.png" width="80px"> | © NEXON Korea
+                Corporation All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, non reprehenderit itaque delectus
+            voluptatem labore eligendi magnam nobis, error natus blanditiis nulla repellat exercitationem modi
+            doloremque commodi officiis asperiores similique!<br><br> Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Magni veritatis modi obcaecati amet quo earum sed quod dignissimos eius ad ea labore voluptatibus at,
+            pariatur cumque mollitia. Veniam, sunt eaque!<br><br> Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Iusto, tenetur reprehenderit. Quaerat, enim laudantium. Quia veritatis numquam voluptatem et natus
+            tempora accusamus sapiente. Quia possimus dolorum repudiandae fugiat, quae ut?Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Ipsam in eius, quaerat earum accusamus aspernatur veritatis assumenda quae,
+            laudantium, quidem modi minus error natus laboriosam aliquid sint consequuntur qui dolorum.<br><br>Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Minima qui, quidem hic quas sequi corrupti molestias.
+            Odio nihil repellat alias voluptatem quisquam laboriosam esse, eum sapiente, libero ullam et
+            consectetur.<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima qui, quidem hic quas
+            sequi corrupti molestias. Odio nihil repellat alias voluptatem quisquam laboriosam esse, eum sapiente,
+            libero ullam et consectetur.<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima qui,
+            quidem hic quas sequi corrupti molestias. Odio nihil repellat alias voluptatem quisquam laboriosam esse, eum
+            sapiente, libero ullam et consectetur.<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Minima qui, quidem hic quas sequi corrupti molestias. Odio nihil repellat alias voluptatem quisquam
+            laboriosam esse, eum sapiente, libero ullam et consectetur.<br><br>
+        </p>
+    </div> -->
+
+    <script>
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        // let imgBG = document.getElementById('imgBG');
+        let imgCenter = document.getElementById('imgCenter');
+        // let imgBehind = document.getElementById('imgBehind');        
+        let imgFront = document.getElementById('imgFront');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            // text.style.marginRight = value * 4 + "px";
+            text.style.marginTop = value * 1.5 + "px";
+            btn.style.marginTop = value * 1.5 + "px";
+            // imgBG.style.top = value * 0.5 + "px";
+            imgCenter.style.marginTop = value * 0.8 + "px";
+            imgBehind.style.top = value * 0.5 + "px";
+            imgFront.style.top = value * 0.1 + "px";
+
+            header.style.top = value * 0.5 + "px";
+        })
+    </script>
+    <script src="dist/data.js"></script>
+    <script src="dist/main.js"></script>
+</body>
+
+</html>

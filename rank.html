@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).on('click', '.option ul li', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        var num;
+        function showInfo(num) {
+            switch (num) {
+                case 1:
+                    document.getElementById("team").style.display = "block";
+                    document.getElementById("individual").style.display = "none";
+                    break;
+                case 2:
+                    document.getElementById("team").style.display = "none";
+                    document.getElementById("individual").style.display = "block";
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+    <script src="trackData.js"></script>
+</head>
+
+<body class="bgImg moveUp">
+    <nav class="navbar-expand-lg navbar-dark bg-dark">
+        <header class="justify-content-around px-5">
+            <a href="index.html" class="logo">Fan-Made</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li><a href="index.html" class="">Home</a></li>
+                    <li><a href="#" class="">About</a></li>
+                    <li><a href="#" class="active">Record</a></li>
+                    <li><a href="#" class="">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+    </nav>
+    <span class="row justify-content-center mx-auto m-5">
+        <div class="row option text-center mt-5">
+            <h1 class="text-light fw-bold mt-5 display-3">Track Record</h1>
+        </div>
+    </span>
+    <!-- <img src="KDL_logo.png" id="imgCenter"> -->
+    <!-- <section class="overflow-hidden" id="secBanner">
+        <h2 id="text">Preseason 2</h2>
+        <a href="#explore" id="btn">Explore</a>
+        <img src="" id="imgFront">
+    </section> -->
+    <main class="bg d-block container-fluid" id="explore">
+        <span class="row justify-content-center mx-auto">
+            <div class="row option">
+                <ul>
+                    <li class="active"><a href="javascript:void(0);" class="" onclick="showInfo(1)" id="Cteam">Team</a></li>
+                    <li class=""><a href="javascript:void(0);" class="" onclick="showInfo(2)" id="Cindi">Individual</a></li>
+                </ul>
+            </div>
+        </span>
+        <div class="col">
+            <p class="text-light text-center d-flex justify-content-center" id="updateTime">-</p>
+        </div>
+        <!-- Team Record -->
+        <div class="moveUp" id="team">
+            <span class="bgSpeed row mx-auto w-75">
+                <div class="col">
+                    <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Speed Track</h4>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack0_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack0">Track</p>
+                        <p class="fw-bold" id="speedTrack0_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack1_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack1">Track</p>
+                        <p class="fw-bold" id="speedTrack1_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack2_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack2">Track</p>
+                        <p class="fw-bold" id="speedTrack2_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack3_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack3">Track</p>
+                        <p class="fw-bold" id="speedTrack3_record" style="color: #ffee00;">-</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack4_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack4">Track</p>
+                        <p class="fw-bold" id="speedTrack4_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack5_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack5">Track</p>
+                        <p class="fw-bold" id="speedTrack5_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack6_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack6">Track</p>
+                        <p class="fw-bold" id="speedTrack6_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack7_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack7">Track</p>
+                        <p class="fw-bold" id="speedTrack7_record" style="color: #ffee00;">-</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack8_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack8">Track</p>
+                        <p class="fw-bold" id="speedTrack8_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack9_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack9">Track</p>
+                        <p class="fw-bold" id="speedTrack9_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack10_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack10">Track</p>
+                        <p class="fw-bold" id="speedTrack10_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="speedTrack11_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="speedTrack11">Track</p>
+                        <p class="fw-bold" id="speedTrack11_record" style="color: #ffee00;">-</p>
+                    </div>
+                </div>
+            </span>
+
+            <span class="bgItem row mx-auto w-75 mt-5">
+                <div class="col">
+                    <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Item Track</h4>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack0_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack0">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack1_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack1">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack2_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack2">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack3_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack3">Track</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack4_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack4">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack5_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack5">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack6_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack6">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack7_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack7">Track</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack8_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack8">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack9_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack9">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack10_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack10">Track</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="itemTrack11_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="itemTrack11">Track</p>
+                    </div>
+                </div>
+            </span>
+        </div>
+
+        <!-- Individual MATCH -->
+        <!-- Speed Record -->
+        <div class="moveUp" id="individual">
+            <span class="bgSpeed row mx-auto w-75">
+                <div class="col">
+                    <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Speed Track</h4>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack0_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack0">Track</p>
+                        <p class="fw-bold" id="indTrack0_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack1_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack1">Track</p>
+                        <p class="fw-bold" id="indTrack1_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack2_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack2">Track</p>
+                        <p class="fw-bold" id="indTrack2_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack3_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack3">Track</p>
+                        <p class="fw-bold" id="indTrack3_record" style="color: #ffee00;">-</p>
+                    </div>
+                </div>
+            </span>
+            <span class="bgSpeed row mx-auto w-75">
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack4_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack4">Track</p>
+                        <p class="fw-bold" id="indTrack4_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack5_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack5">Track</p>
+                        <p class="fw-bold" id="indTrack5_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack6_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack6">Track</p>
+                        <p class="fw-bold" id="indTrack6_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack7_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack7">Track</p>
+                        <p class="fw-bold" id="indTrack7_record" style="color: #ffee00;">-</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center text-center mx-auto">
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack8_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack8">Track</p>
+                        <p class="fw-bold" id="indTrack8_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack9_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack9">Track</p>
+                        <p class="fw-bold" id="indTrack9_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack10_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack10">Track</p>
+                        <p class="fw-bold" id="indTrack10_record" style="color: #ffee00;">-</p>
+                    </div>
+                    <div class="col-6 col-lg-3 text-center mt-3">
+                        <div class="mb-3">
+                            <img id="indTrack11_img" src="Track/Unknown.png" class="img-fluid">
+                        </div>
+                        <p class="text-light" id="indTrack11">Track</p>
+                        <p class="fw-bold" id="indTrack11_record" style="color: #ffee00;">-</p>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </main>
+    <footer class="bg d-block container-fluid p-5">
+        <div class="col container  justify-content-center">
+            <p class="text-light text-center">
+                This is a <b>fan-made</b> website, please follow the announcement on the official website for all
+                information.
+            </p>
+            <br>
+            <p class="text-center" style="background-color: #fff;"><img src="nexon.png" width="80px"> | © NEXON Korea
+                Corporation All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var num;
+        for (num = 0; num < 12; num++) {
+            document.getElementById('itemTrack' + num).textContent = itemTrack[num].name;
+            document.getElementById('itemTrack' + num + '_img').src = itemTrack[num].img;
+
+            document.getElementById('speedTrack' + num).textContent = speedTrack[num].name;
+            document.getElementById('speedTrack' + num + '_img').src = speedTrack[num].img;
+            document.getElementById('speedTrack' + num + '_record').textContent = speedTrack[num].record;
+            
+            document.getElementById('indTrack' + num).textContent = indTrack[num].name;
+            document.getElementById('indTrack' + num + '_img').src = indTrack[num].img;
+            document.getElementById('indTrack' + num + '_record').textContent = indTrack[num].record;
+        }
+        document.getElementById('updateTime').textContent = updateTime;
+    </script>
+    <!-- <script src="main.js"></script> -->
+</body>
+
+</html>
