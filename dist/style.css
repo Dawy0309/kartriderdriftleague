@@ -43,7 +43,7 @@ body {
 .bgImg{
   display: block;
   object-fit: cover;
-  background-image: url(/img/S2background.png);
+  background-image: url("/img/S2background.png");
 }
 .bgTeam {
   background: linear-gradient(to right, #750000, #092d7c);
