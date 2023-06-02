@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/players_list.css">
+    <title>KDL | Fan-Made Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).on('click', '.option ul li', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        var num;
+        function showInfo(num) {
+            switch (num) {
+                case 1:
+                    document.getElementById("team").style.display = "block";
+                    document.getElementById("individual").style.display = "none";
+                    break;
+                case 2:
+                    document.getElementById("team").style.display = "none";
+                    document.getElementById("individual").style.display = "block";
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body class="moveUp bgImg">
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex">
+            <div class="container-fluid container option">
+                <a href="index.html" class="logo navbar-brand">Fan-Made</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="" href="rank.html">Rank</a></li>
+                        <li class="nav-item"><a class="" href="record.html" aria-current="page">Record</a></li>
+                        <li class="nav-item"><a class="active" href="players.html">Players</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <span class="row justify-content-center mx-auto m-5">
+        <div class="row option text-center m-5">
+            <h1 class="text-light fw-bold display-3">Players List</h1>
+        </div>
+    </span>
+    <!-- <img src="KDL_logo.png" id="imgCenter"> -->
+    <!-- <section class="overflow-hidden" id="secBanner">
+        <h2 id="text">Preseason 2</h2>
+        <a href="#explore" id="btn">Explore</a>
+        <img src="" id="imgFront">
+    </section> -->
+    <main class="bg d-block container-fluid" id="explore">
+        <span class="row justify-content-center mx-auto">
+            <div class="row option mt-3">
+                <ul>
+                    <li class="active"><a href="javascript:void(0);" class="" onclick="showInfo(1)" id="Cteam">Team</a>
+                    </li>
+                    <li class=""><a href="javascript:void(0);" class="" onclick="showInfo(2)" id="Cindi">Individual</a>
+                    </li>
+                </ul>
+            </div>
+        </span>
+        <!-- Team List -->
+        <div class="moveUp" id="team">
+            <span class="bgSpeed row mx-auto col-md-10">
+                <!-- Team List -->
+                <div class="row bg-dark mx-auto rounded teamlist">
+                    <ul class="row col-lg-12 col-md-12 col-sm-6 mx-auto p-3 align-items-center my-auto">
+                        <li class="row col mx-auto">
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 active select" onclick="showTeam(1)">
+                                <img src="Team/kdf.png" class="img-fluid">
+                            </a>
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 select" onclick="showTeam(2)">
+                                <img src="Team/lsb.png" class="img-fluid">
+                            </a>
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 select" onclick="showTeam(3)">
+                                <img src="Team/au.png" class="img-fluid">
+                            </a>
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 select" onclick="showTeam(4)">
+                                <img src="Team/rox.png" class="img-fluid">
+                            </a>
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 select" onclick="showTeam(5)">
+                                <img src="Team/fnl.png" class="img-fluid">
+                            </a>
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 select" onclick="showTeam(6)">
+                                <img src="Team/pln.png" class="img-fluid">
+                            </a>
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 select" onclick="showTeam(7)">
+                                <img src="Team/sst.png" class="img-fluid">
+                            </a>
+                            <a href="javascript:void(0);" class="col-3 col-md p-1 select" onclick="showTeam(8)">
+                                <img src="Team/rbt.png" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Team1 Players List -->
+                <div class="moveUp" id="team1">
+                    <div class="row col mx-auto">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">KWANGDONG FREECS
+                        </h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/kdf/Cool.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">Cool</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="team2">
+                    <div class="col">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Liiv SANDBOX</h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/lsb/NEAL.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">NEAL</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Item Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="team3">
+                    <div class="col">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Aura</h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Item Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="team4">
+                    <div class="col">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">ROX</h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Item Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="team5">
+                    <div class="col">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">FINALE e-sports</h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Item Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="team6">
+                    <div class="col">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Planet</h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Item Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="team7">
+                    <div class="col">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">Sensation</h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Item Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="team8">
+                    <div class="col">
+                        <h4 class="text-light text-center fw-bold d-flex justify-content-center mt-4">ReBoot</h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Speed Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Runner</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Hybrid</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <p class="text-light text-uppercase">Item Ace</p>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+
+        <!-- Individual List -->
+        <div class="moveUp" id="individual">
+            <div class="row mt-3 col-md-10 mx-auto playerlist">
+                <ul class="row col-lg-12 col-md-12 col-sm-6 mx-auto p-3 align-items-center my-auto">
+                    <li class="row col mx-auto text-center fw-bold text-uppercase">
+                        <a href="javascript:void(0);" class="col-3 col-md p-1 pick active" onclick="showGroup(1)">Group A</a>
+                        <a href="javascript:void(0);" class="col-3 col-md p-1 pick" onclick="showGroup(2)">Group B</a>
+                        <a href="javascript:void(0);" class="col-3 col-md p-1 pick" onclick="showGroup(3)">Group C</a>
+                        <a href="javascript:void(0);" class="col-3 col-md p-1 pick" onclick="showGroup(4)">Group D</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="bgIndividualResult row mx-auto col-md-10">
+                <div class="moveUp" id="group1">
+                    <div class="row col mx-auto">
+                        <h4 class="text-light text-center text-uppercase fw-bold d-flex justify-content-center mt-4">R.O.32 - Group A
+                        </h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/kdf/Cool.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">Cool</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="group2">
+                    <div class="row col mx-auto">
+                        <h4 class="text-light text-center text-uppercase fw-bold d-flex justify-content-center mt-4">R.O.32 - Group B
+                        </h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/lsb/NEAL.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">NEAL</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="group3">
+                    <div class="row col mx-auto">
+                        <h4 class="text-light text-center text-uppercase fw-bold d-flex justify-content-center mt-4">R.O.32 - Group C
+                        </h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/lsb/HyunSu.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">HyunSu</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moveUp" id="group4">
+                    <div class="row col mx-auto">
+                        <h4 class="text-light text-center text-uppercase fw-bold d-flex justify-content-center mt-4">R.O.32 - Group D
+                        </h4>
+                    </div>
+                    <div class="row justify-content-start align-items-center text-center mx-auto">
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/kdf/World.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">Spell</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                        <div class="col-6 col-lg-3 text-center mt-3">
+                            <div class="mb-3">
+                                <img src="teamPlayers/Unknown.png" class="img-fluid">
+                            </div>
+                            <h5 class="fw-bold text-white">-</h5>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </main>
+    <footer class="bg d-block container-fluid p-5">
+        <div class="col container  justify-content-center">
+            <p class="text-light text-center">
+                This is a <b>fan-made</b> website, please follow the announcement on the official website for all
+                information.
+            </p>
+            <br>
+            <p class="text-center" style="background-color: #fff;"><img src="img/nexon.png" width="80px"> | © NEXON
+                Korea
+                Corporation All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).on('click', '.teamlist ul li a', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        var num;
+        function showTeam(num) {
+            var i;
+            for (let i = 1; i < 9; i++) {
+                document.getElementById("team" + i).style.display = "none";
+            }
+            switch (num) {
+                case 1:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                case 2:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                case 3:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                case 4:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                case 5:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                case 6:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                case 7:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                case 8:
+                    document.getElementById("team" + num).style.display = "block";
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+    <script>
+        $(document).on('click', '.playerlist ul li a', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        var num;
+        function showGroup(num) {
+            var i;
+            for (let i = 1; i < 5; i++) {
+                document.getElementById("group" + i).style.display = "none";
+            }
+            switch (num) {
+                case 1:
+                    document.getElementById("group" + num).style.display = "block";
+                    break;
+                case 2:
+                    document.getElementById("group" + num).style.display = "block";
+                    break;
+                case 3:
+                    document.getElementById("group" + num).style.display = "block";
+                    break;
+                case 4:
+                    document.getElementById("group" + num).style.display = "block";
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.select {
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.select.active,
+.select:hover {
+  display: block;
+  background: gray;
+  color: #2b1055;
+}
+
+.pick {
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.pick.active,
+.pick:hover {
+  display: block;
+  background: #fff;
+  color: #2b1055;
+}
+
+#team2,
+#team3,
+#team4,
+#team5,
+#team6,
+#team7,
+#team8,
+#group2,
+#group3,
+#group4 {
+  display: none;
+}
