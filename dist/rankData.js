@@ -18,7 +18,7 @@ var teamRank = [
   },
   {
     name: "Aura",
-    img: "Team/au.png",
+    img: "Team/ar.png",
     win: "-",
     lose: "-",
     set: "-",

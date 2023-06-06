@@ -39,8 +39,8 @@ var Team = [
     img:"Team/sst.png"
   },
   {
-    name:"AU",
-    img:"Team/au.png"
+    name:"AR",
+    img:"Team/ar.png"
   },
   {
     name:"SRP",
@@ -61,8 +61,8 @@ var Team = [
     img:""
   },
   {
-    name:"AU",
-    img:"Team/au.png"
+    name:"AR",
+    img:"Team/ar.png"
   },
   {
     name:"PO",
