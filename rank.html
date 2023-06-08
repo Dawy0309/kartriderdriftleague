@@ -18,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="dist/rankData.js"></script>
+    <script src="dist/backtop.js"></script>
     <script>
         $(document).on('click', '.option ul li', function () {
             $(this).addClass('active').siblings().removeClass('active')
@@ -126,7 +127,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
+                        <th scope="row" class="text-warning">1</th>
                         <td class="text-start"><img src="Team/kdf.png" class="mw-60"  id="teamRank0_img">
                             <p class="d-inline" id="teamRank0">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank0_win">0</p></td>
@@ -135,7 +136,7 @@
                         <td><p class="d-inline" id="teamRank0_round">0</p></td>
                       </tr>
                       <tr>
-                        <th scope="col">2</th>
+                        <th scope="col" class="text-warning">2</th>
                         <td class="text-start"><img src="Team/kdf.png" class="mw-60"  id="teamRank1_img">
                             <p class="d-inline" id="teamRank1">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank1_win">0</p></td>
@@ -144,7 +145,7 @@
                         <td><p class="d-inline" id="teamRank1_round">0</p></td>
                       </tr>
                       <tr>
-                        <th scope="col">3</th>
+                        <th scope="col" class="text-info">3</th>
                         <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank2_img">
                             <p class="d-inline" id="teamRank2">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank2_win">0</p></td>
@@ -153,7 +154,7 @@
                         <td><p class="d-inline" id="teamRank2_round">0</p></td>
                       </tr>
                       <tr>
-                        <th scope="col">4</th>
+                        <th scope="col" class="text-info">4</th>
                         <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank3_img">
                             <p class="d-inline" id="teamRank3">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank3_win">0</p></td>
@@ -162,7 +163,7 @@
                         <td><p class="d-inline" id="teamRank3_round">0</p></td>
                       </tr> 
                       <tr>
-                        <th scope="col">5</th>
+                        <th scope="col" class="text-white-50">5</th>
                         <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank4_img">
                             <p class="d-inline" id="teamRank4">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank4_win">0</p></td>
@@ -171,7 +172,7 @@
                         <td><p class="d-inline" id="teamRank4_round">0</p></td>
                       </tr> 
                       <tr>
-                        <th scope="col">6</th>
+                        <th scope="col" class="text-white-50">6</th>
                         <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank5_img">
                             <p class="d-inline" id="teamRank5">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank5_win">0</p></td>
@@ -180,7 +181,7 @@
                         <td><p class="d-inline" id="teamRank5_round">0</p></td>
                       </tr> 
                       <tr>
-                        <th scope="col">7</th>
+                        <th scope="col" class="text-white-50">7</th>
                         <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank6_img">
                             <p class="d-inline" id="teamRank6">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank6_win">0</p></td>
@@ -189,7 +190,7 @@
                         <td><p class="d-inline" id="teamRank6_round">0</p></td>
                       </tr> 
                       <tr>
-                        <th scope="col">8</th>
+                        <th scope="col" class="text-white-50">8</th>
                         <td class="text-start"><img src="Team/Unknown.png" class="mw-60"  id="teamRank7_img">
                             <p class="d-inline" id="teamRank7">-</p></td>
                         <td><p class="d-inline text-warning fw-bold" id="teamRank7_win">0</p></td>
@@ -226,6 +227,7 @@
                 
             </div>
         </span>
+        <button class="js-back-to-top back-to-top" title="回到頁首"><b>&#65085;</b></button>
     </main>
     <footer class="bg d-block container-fluid p-5">
         <div class="col container  justify-content-center">
