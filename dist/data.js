@@ -1,12 +1,16 @@
-var teamSatMatch = "06/17 (Sat.) UTC+8 17:00";
-var teamSunMatch = "06/18 (Sun.) UTC+8 17:00";
-var teamWedMatch = "06/21 (Wed.) UTC+8 18:00";
-var teamSatResult = "00/00 (Sat.)";
-var teamSunResult = "00/00 (Sun.)";
-var teamWedResult = "00/00 (Wed.)";
+var teamSatMatch = "06/17(Sat.) UTC+8 17:00";
+var teamSunMatch = "06/18(Sun.) UTC+8 17:00";
+var teamWedMatch = "06/21(Wed.) UTC+8 18:00";
 
-var indSatMatch = "06/17 (Sat.) UTC+8 17:00";
-var indSunMatch = "06/18 (Sun.) UTC+8 17:00";
+var teamSatResult = "00/00(Sat.)";
+var teamSunResult = "00/00(Sun.)";
+var teamWedResult = "00/00(Wed.)";
+
+var indSatMatch = "06/17(Sat.) UTC+8 17:00";
+var indSunMatch = "06/18(Sun.) UTC+8 17:00";
+var indSatMatchTitle = "R.O.32 GROUP A";
+var indSunMatchTitle = "R.O.32 GROUP B";
+
 var indSatResult = "00/00(Sat.)";
 var indSunResult = "00/00(Sun..)";
 

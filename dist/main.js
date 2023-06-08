@@ -25,5 +25,7 @@ document.getElementById('teamWedResult').textContent = teamWedResult;
 
 document.getElementById('indSatMatch').textContent = indSatMatch;
 document.getElementById('indSunMatch').textContent = indSunMatch;
+document.getElementById('indSatMatchTitle').textContent = indSatMatchTitle;
+document.getElementById('indSunMatchTitle').textContent = indSunMatchTitle;
 document.getElementById('indSatResult').textContent = indSatResult;
 document.getElementById('indSunResult').textContent = indSunResult;
