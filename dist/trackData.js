@@ -1,4 +1,4 @@
-var updateTime = "Last Update: 06/11(Sat.)";
+var updateTime = "Last Update: 06/11(Sun.)";
 var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",

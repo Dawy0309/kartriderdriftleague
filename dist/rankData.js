@@ -1,4 +1,4 @@
-var updateTime = "Last Update: 06/11(Sat.)";
+var updateTime = "Last Update: 06/14(Wed.)";
 var teamRank = [
   {
     name: "KWANGDONG FREECS",
