@@ -172,7 +172,7 @@ var Player = [
     },
     {
       name: "UMaRu",
-      img:"Player/Unknown.png",
+      img:"Player/UMaRu.png",
     },
     {
       name: "Cool",
@@ -198,7 +198,7 @@ var Player = [
     },
     {
       name: "Most",
-      img:"Player/Unknown.png",
+      img:"Player/Most.png",
     },
     {
       name: "ByungSu",
@@ -210,7 +210,7 @@ var Player = [
     },
     {
       name: "Curren",
-      img:"Player/Unknown.png",
+      img:"Player/Curren.png",
     },
     {
       name: "HoJun",
