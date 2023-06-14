@@ -42,7 +42,7 @@ var teamRank = [
   },
   {
     name: "Potential",
-    img: "",
+    img: "Team/po.png",
     win: "-",
     lose: "-",
     set: "-",
@@ -50,7 +50,7 @@ var teamRank = [
   },
   {
     name: "ShowTime",
-    img: "",
+    img: "Team/st.png",
     win: "-",
     lose: "-",
     set: "-",
@@ -58,7 +58,7 @@ var teamRank = [
   },
   {
     name: "Seraphic",
-    img: "",
+    img: "Team/srp.png",
     win: "-",
     lose: "-",
     set: "-",

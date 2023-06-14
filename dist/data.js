@@ -22,7 +22,7 @@ var Team = [
   },
   {
     name:"ST",
-    img:""
+    img:"Team/st.png"
   },
   {
     name:"KDF",
@@ -30,7 +30,7 @@ var Team = [
   },
   {
     name:"PO",
-    img:""
+    img:"Team/po.png"
   },
 
 // Sun.
@@ -48,13 +48,13 @@ var Team = [
   },
   {
     name:"SRP",
-    img:""
+    img:"Team/srp.png"
   },
 
 // Wed.
   {
     name:"SRP",
-    img:""
+    img:"Team/srp.png"
   },
   {
     name:"KDF",
@@ -62,7 +62,7 @@ var Team = [
   },
   {
     name:"ST",
-    img:""
+    img:"Team/st.png"
   },
   {
     name:"AR",
@@ -70,7 +70,7 @@ var Team = [
   },
   {
     name:"PO",
-    img:""
+    img:"Team/po.png"
   },
   {
     name:"LSB",
@@ -198,7 +198,7 @@ var Player = [
     },
     {
       name: "Most",
-      img:"Player/Unknown.png",
+      img:"Player/Most.png",
     },
     {
       name: "ByungSu",
