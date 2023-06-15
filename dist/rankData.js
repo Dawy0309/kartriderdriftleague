@@ -25,7 +25,7 @@ var teamRank = [
     round: "-",
   },
   {
-    name: "ROX",
+    name: "Seongnam ROX",
     img: "Team/rox.png",
     win: "-",
     lose: "-",
