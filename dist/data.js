@@ -1,6 +1,6 @@
 var teamSatMatch = "06/17(Sat.) UTC+8 17:00";
 var teamSunMatch = "06/18(Sun.) UTC+8 17:00";
-var teamWedMatch = "06/21(Wed.) UTC+8 18:00";
+var teamWedMatch = "06/21(Wed.) UTC+8 17:00";
 
 var teamSatResult = "00/00(Sat.)";
 var teamSunResult = "00/00(Sun.)";
