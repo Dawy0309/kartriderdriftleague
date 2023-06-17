@@ -13,6 +13,8 @@ var indSunMatchTitle = "R.O.32 GROUP B";
 
 var indSatResult = "06/17(Sat.)";
 var indSunResult = "00/00(Sun..)";
+var indSatResultTitle = "R.O.32 GROUP A";
+var indSunResultTitle = "";
 
 var Team = [
   // Sat.

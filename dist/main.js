@@ -29,3 +29,5 @@ document.getElementById('indSatMatchTitle').textContent = indSatMatchTitle;
 document.getElementById('indSunMatchTitle').textContent = indSunMatchTitle;
 document.getElementById('indSatResult').textContent = indSatResult;
 document.getElementById('indSunResult').textContent = indSunResult;
+document.getElementById('indSatResultTitle').textContent = indSatResultTitle;
+document.getElementById('indSunResultTitle').textContent = indSunResultTitle;
