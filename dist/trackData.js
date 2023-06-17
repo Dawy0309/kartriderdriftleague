@@ -1,9 +1,9 @@
-var updateTime = "Last Update: 06/11(Sun.)";
+var updateTime = "Last Update: 06/17(Sat.)";
 var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",
     img: "Track/0.png",
-    record: "-",
+    record: "ROX Spell 02:22.267",
   },
   {
     name: "World Tour: New York Rally",
@@ -13,22 +13,22 @@ var speedTrack = [
   {
     name: "Glacier: Extreme Stadium",
     img: "Track/2.png",
-    record: "-",
+    record: "KDF SPEAR 01:50.738",
   },
   {
     name: "Desert: Construction Chaos",
     img: "Track/3.png",
-    record: "-",
+    record: "KDF SUNGBIN 02:08.604",
   },
   {
     name: "Village: Boom Hill Tunnel",
     img: "Track/4.png",
-    record: "-",
+    record: "PO Wave 01:17.828",
   },
   {
     name: "Mine: Three Shortcuts",
     img: "Track/5.png",
-    record: "-",
+    record: "KDF Cool 01:40.939",
   },
   {
     name: "WKC: Brazil Circuit",
@@ -38,7 +38,7 @@ var speedTrack = [
   {
     name: "Mine: Winding Slopes",
     img: "Track/7.png",
-    record: "-",
+    record: "PO Summer 01:18.735",
   },
   {
     name: "Factory: Facility 5",
@@ -48,7 +48,7 @@ var speedTrack = [
   {
     name: "World Tour: Terracotta Twister",
     img: "Track/9.png",
-    record: "-",
+    record: "ROX DDING 01:50.184",
   },
   {
     name: "WKC: Japan Circuit",
@@ -58,7 +58,7 @@ var speedTrack = [
   {
     name: "WKC: Singapore Circuit",
     img: "Track/11.png",
-    record: "-",
+    record: "ROX DDING 02:07.643",
   },
 ];
 var itemTrack = [
@@ -120,22 +120,22 @@ var indTrack = [
   {
     name: "World Tour: New York Rally",
     img: "Track/ind/1.png",
-    record: "-",
+    record: "Hong 01:33.382",
   },
   {
     name: "Glacier: Extreme Stadium",
     img: "Track/ind/2.png",
-    record: "-",
+    record: "Cool 01:51.882",
   },
   {
     name: "Desert: Construction Chaos",
     img: "Track/ind/3.png",
-    record: "-",
+    record: "World 02:09.233",
   },
   {
     name: "Village: Boom Hill Tunnel",
     img: "Track/ind/4.png",
-    record: "-",
+    record: "Cool 01:17.641",
   },
   {
     name: "Mine: Three Shortcuts",
@@ -155,17 +155,17 @@ var indTrack = [
   {
     name: "Mine: Rickety Rails",
     img: "Track/ind/8.png",
-    record: "-",
+    record: "Cool 01:39.796",
   },
   {
     name: "Desert: Ancient Aqueducts",
     img: "Track/ind/9.png",
-    record: "-",
+    record: "World 01:54.914",
   },
   {
     name: "World Tour: Rio de Ja-nitro",
     img: "Track/ind/10.png",
-    record: "-",
+    record: "Cool 01:13.688",
   },
   {
     name: "WKC: Korea Circuit",

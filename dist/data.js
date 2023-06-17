@@ -1,17 +1,17 @@
-var teamSatMatch = "06/17(Sat.) UTC+8 17:00";
+var teamSatMatch = "06/24(Sat.) UTC+8 17:00";
 var teamSunMatch = "06/18(Sun.) UTC+8 17:00";
 var teamWedMatch = "06/21(Wed.) UTC+8 17:00";
 
-var teamSatResult = "00/00(Sat.)";
+var teamSatResult = "06/17(Sat.)";
 var teamSunResult = "00/00(Sun.)";
 var teamWedResult = "00/00(Wed.)";
 
-var indSatMatch = "06/17(Sat.) UTC+8 17:00";
-var indSunMatch = "06/18(Sun.) UTC+8 17:00";
-var indSatMatchTitle = "R.O.32 GROUP A";
+var indSatMatch = "06/24(Sat.)";
+var indSunMatch = "06/18(Sun.)";
+var indSatMatchTitle = "R.O.32 GROUP C";
 var indSunMatchTitle = "R.O.32 GROUP B";
 
-var indSatResult = "00/00(Sat.)";
+var indSatResult = "06/17(Sat.)";
 var indSunResult = "00/00(Sun..)";
 
 var Team = [
@@ -21,16 +21,16 @@ var Team = [
     img:"Team/rox.png"
   },
   {
+    name:"PO",
+    img:"Team/po.png"
+  },
+  {
     name:"ST",
     img:"Team/st.png"
   },
   {
-    name:"KDF",
-    img:"Team/kdf.png"
-  },
-  {
-    name:"PO",
-    img:"Team/po.png"
+    name:"SST",
+    img:"Team/sst.png"
   },
 
 // Sun.
@@ -82,24 +82,24 @@ var Team = [
 var TeamResult = [
   // Sat.
   {
-    name:"",
-    img:"",
+    name:"ROX",
+    img:"Team/rox.png",
+    score: "2",
+  },
+  {
+    name:"ST",
+    img:"Team/st.png",
     score: "0",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"KDF",
+    img:"Team/kdf.png",
+    score: "2",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
-  },
-  {
-    name:"",
-    img:"",
-    score: "0",
+    name:"PO",
+    img:"Team/po.png",
+    score: "1",
   },
 
   // Sun.
@@ -159,36 +159,36 @@ var TeamResult = [
 
 var Player = [
     {
-      name: "vaNilla",
-      img:"Player/vaNilla.png",
+      name: "Skald",
+      img:"Player/Skald.png",
     },
     {
-      name: "Hong",
-      img:"Player/Hong.png",
+      name: "DDING",
+      img:"Player/DDing.png",
     },
     {
-      name: "NEAL",
-      img:"Player/NEAL.png",
+      name: "SUNGBIN",
+      img:"Player/SUNGBIN.png",
     },
     {
-      name: "UMaRu",
-      img:"Player/UMaRu.png",
+      name: "Feiz",
+      img:"Player/Feiz.png",
     },
     {
-      name: "Cool",
-      img:"Player/Cool.png",
+      name: "Navi",
+      img:"Player/Navi.png",
     },
     {
-      name: "VEGA",
-      img:"Player/VEGA.png",
+      name: "Load",
+      img:"Player/Load.png",
     },
     {
-      name: "Duzzi",
-      img:"Player/Duzzi.png",
+      name: "Joker",
+      img:"Player/Joker.png",
     },
     {
-      name: "World",
-      img:"Player/World.png",
+      name: "HyunSu",
+      img:"Player/HyunSu.png",
     },
 
 
@@ -228,44 +228,44 @@ var Player = [
 
 var PlayerResult = [
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "Cool",
+    score: "55",
+    img:"Player/Cool.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "World",
+    score: "36",
+    img:"Player/World.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "NEAL",
+    score: "29",
+    img:"Player/NEAL.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "Duzzi",
+    score: "24",
+    img:"Player/Duzzi.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "vaNilla",
+    score: "24",
+    img:"Player/vaNilla.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "Hong",
+    score: "16",
+    img:"Player/Hong.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "UMaRu",
+    score: "12",
+    img:"Player/UMaRu.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "VEGA",
+    score: "7",
+    img:"Player/VEGA.png",
   },
 
 
