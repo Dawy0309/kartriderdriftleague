@@ -1,20 +1,20 @@
 var teamSatMatch = "06/24(Sat.) UTC+8 17:00";
-var teamSunMatch = "06/18(Sun.) UTC+8 17:00";
+var teamSunMatch = "06/25(Sun.) UTC+8 17:00";
 var teamWedMatch = "06/21(Wed.) UTC+8 17:00";
 
 var teamSatResult = "06/17(Sat.)";
-var teamSunResult = "00/00(Sun.)";
+var teamSunResult = "06/18(Sun.)";
 var teamWedResult = "00/00(Wed.)";
 
 var indSatMatch = "06/24(Sat.)";
-var indSunMatch = "06/18(Sun.)";
+var indSunMatch = "06/25(Sun.)";
 var indSatMatchTitle = "R.O.32 GROUP C";
-var indSunMatchTitle = "R.O.32 GROUP B";
+var indSunMatchTitle = "R.O.32 GROUP D";
 
 var indSatResult = "06/17(Sat.)";
-var indSunResult = "00/00(Sun..)";
+var indSunResult = "06/18(Sun..)";
 var indSatResultTitle = "R.O.32 GROUP A";
-var indSunResultTitle = "";
+var indSunResultTitle = "R.O.32 GROUP B";
 
 var Team = [
   // Sat.
@@ -37,16 +37,16 @@ var Team = [
 
 // Sun.
   {
-    name:"LSB",
-    img:"Team/lsb.png"
-  },
-  {
-    name:"SST",
-    img:"Team/sst.png"
+    name:"KDF",
+    img:"Team/kdf.png"
   },
   {
     name:"AR",
     img:"Team/ar.png"
+  },
+  {
+    name:"LSB",
+    img:"Team/lsb.png"
   },
   {
     name:"SRP",
@@ -106,23 +106,23 @@ var TeamResult = [
 
   // Sun.
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"LSB",
+    img:"Team/lsb.png",
+    score: "2",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"SST",
+    img:"Team/sst.png",
+    score: "1",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"AR",
+    img:"Team/ar.png",
+    score: "2",
   },
   {
-    name:"",
-    img:"",
+    name:"SRP",
+    img:"Team/srp.png",
     score: "0",
   },
 
@@ -195,36 +195,36 @@ var Player = [
 
 
     {
-      name: "SPEAR",
-      img:"Player/SPEAR.png",
+      name: "JJONG",
+      img:"Player/JJONG.png",
     },
     {
-      name: "Most",
-      img:"Player/Most.png",
+      name: "Luning",
+      img:"Player/Luning.png",
     },
     {
-      name: "ByungSu",
-      img:"Player/Speed.png",
+      name: "Percent",
+      img:"Player/Percent.png",
     },
     {
-      name: "MINSIK",
-      img:"Player/MINSIK.png",
+      name: "JiMin",
+      img:"Player/JiMin.png",
     },
     {
-      name: "Curren",
-      img:"Player/Curren.png",
+      name: "Cosu",
+      img:"Player/Cosu.png",
     },
     {
-      name: "HoJun",
-      img:"Player/HoJun.png",
+      name: "Knock",
+      img:"Player/Knock.png",
     },
     {
-      name: "Hero",
-      img:"Player/Hero.png",
+      name: "Spell",
+      img:"Player/Spell.png",
     },
     {
-      name: "Scarlet",
-      img:"Player/Scarlet.png",
+      name: "Wave",
+      img:"Player/Wave.png",
     }
   ];
 
@@ -272,43 +272,43 @@ var PlayerResult = [
 
 
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "Hero",
+    score: "50",
+    img:"Player/Hero.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "HoJun",
+    score: "49",
+    img:"Player/HoJun.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "SPEAR",
+    score: "44",
+    img:"Player/SPEAR.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "Most",
+    score: "40",
+    img:"Player/Most.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "MINSIK",
+    score: "24",
+    img:"Player/MINSIK.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "ByungSu",
+    score: "20",
+    img:"Player/Speed.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "Curren",
+    score: "19",
+    img:"Player/Curren.png",
   },
   {
-    name: "",
-    score: "",
-    img:"",
+    name: "Scarlet",
+    score: "15",
+    img:"Player/Scarlet.png",
   }
 ];
