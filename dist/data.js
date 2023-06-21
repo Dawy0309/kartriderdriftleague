@@ -1,10 +1,10 @@
 var teamSatMatch = "06/24(Sat.) UTC+8 17:00";
 var teamSunMatch = "06/25(Sun.) UTC+8 17:00";
-var teamWedMatch = "06/21(Wed.) UTC+8 17:00";
+var teamWedMatch = "06/28(Wed.) UTC+8 17:00";
 
 var teamSatResult = "06/17(Sat.)";
 var teamSunResult = "06/18(Sun.)";
-var teamWedResult = "00/00(Wed.)";
+var teamWedResult = "06/21(Wed.)";
 
 var indSatMatch = "06/24(Sat.)";
 var indSunMatch = "06/25(Sun.)";
@@ -12,7 +12,7 @@ var indSatMatchTitle = "R.O.32 GROUP C";
 var indSunMatchTitle = "R.O.32 GROUP D";
 
 var indSatResult = "06/17(Sat.)";
-var indSunResult = "06/18(Sun..)";
+var indSunResult = "06/18(Sun.)";
 var indSatResultTitle = "R.O.32 GROUP A";
 var indSunResultTitle = "R.O.32 GROUP B";
 
@@ -55,8 +55,20 @@ var Team = [
 
 // Wed.
   {
-    name:"SRP",
-    img:"Team/srp.png"
+    name:"AR",
+    img:"Team/ar.png"
+  },
+  {
+    name:"LSB",
+    img:"Team/lsb.png"
+  },
+  {
+    name:"SST",
+    img:"Team/sst.png"
+  },
+  {
+    name:"ROX",
+    img:"Team/rox.png"
   },
   {
     name:"KDF",
@@ -65,18 +77,6 @@ var Team = [
   {
     name:"ST",
     img:"Team/st.png"
-  },
-  {
-    name:"AR",
-    img:"Team/ar.png"
-  },
-  {
-    name:"PO",
-    img:"Team/po.png"
-  },
-  {
-    name:"LSB",
-    img:"Team/lsb.png"
   }
   
 ];
@@ -128,34 +128,34 @@ var TeamResult = [
 
   // Wed.
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"KDF",
+    img:"Team/kdf.png",
+    score: "2",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"SRP",
+    img:"Team/srp.png",
+    score: "1",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"AR",
+    img:"Team/ar.png",
+    score: "2",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"ST",
+    img:"Team/st.png",
+    score: "1",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"LSB",
+    img:"Team/lsb.png",
+    score: "2",
   },
   {
-    name:"",
-    img:"",
-    score: "0",
+    name:"PO",
+    img:"Team/po.png",
+    score: "1",
   }
 ];
 
@@ -230,9 +230,9 @@ var Player = [
 
 var PlayerResult = [
   {
-    name: "Cool",
-    score: "55",
+    name: "Cool",    
     img:"Player/Cool.png",
+    score: "55",
   },
   {
     name: "World",
