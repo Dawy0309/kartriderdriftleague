@@ -7,9 +7,9 @@ var teamSunResult = "06/25(Sun.)";
 var teamWedResult = "06/21(Wed.)";
 
 var indSatMatch = "07/01(Sat.)";
-var indSunMatch = "06/25(Sun.)";
+var indSunMatch = "07/02(Sun.)";
 var indSatMatchTitle = "R.O.16 GROUP 1";
-var indSunMatchTitle = "R.O.32 GROUP D";
+var indSunMatchTitle = "R.O.16 GROUP 2";
 
 var indSatResult = "06/24(Sat.)";
 var indSunResult = "06/25(Sun.)";
@@ -195,36 +195,36 @@ var Player = [
 
 
     {
-      name: "JJONG",
-      img:"Player/JJONG.png",
-    },
-    {
       name: "Luning",
       img:"Player/Luning.png",
     },
     {
-      name: "Percent",
-      img:"Player/Percent.png",
+      name: "JJONG",
+      img:"Player/JJONG.png",
     },
     {
-      name: "JiMin",
-      img:"Player/JiMin.png",
+      name: "Hero",
+      img:"Player/Hero.png",
     },
     {
-      name: "Cosu",
-      img:"Player/Cosu.png",
+      name: "HoJun",
+      img:"Player/HoJun.png",
     },
     {
-      name: "Knock",
-      img:"Player/Knock.png",
+      name: "SPEAR",
+      img:"Player/SPEAR.png",
+    },
+    {
+      name: "Most",
+      img:"Player/Most.png",
     },
     {
       name: "Spell",
       img:"Player/Spell.png",
     },
     {
-      name: "Wave",
-      img:"Player/Wave.png",
+      name: "JiMin",
+      img:"Player/JiMin.png",
     }
   ];
 
