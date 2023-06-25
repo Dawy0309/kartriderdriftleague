@@ -1,9 +1,9 @@
 var teamSatMatch = "07/01(Sat.) UTC+8 17:00";
-var teamSunMatch = "06/25(Sun.) UTC+8 17:00";
+var teamSunMatch = "07/02(Sun.) UTC+8 17:00";
 var teamWedMatch = "06/28(Wed.) UTC+8 17:00";
 
 var teamSatResult = "06/24(Sat.)";
-var teamSunResult = "06/18(Sun.)";
+var teamSunResult = "06/25(Sun.)";
 var teamWedResult = "06/21(Wed.)";
 
 var indSatMatch = "07/01(Sat.)";
@@ -12,9 +12,9 @@ var indSatMatchTitle = "R.O.16 GROUP 1";
 var indSunMatchTitle = "R.O.32 GROUP D";
 
 var indSatResult = "06/24(Sat.)";
-var indSunResult = "06/18(Sun.)";
+var indSunResult = "06/25(Sun.)";
 var indSatResultTitle = "R.O.32 GROUP C";
-var indSunResultTitle = "R.O.32 GROUP B";
+var indSunResultTitle = "R.O.32 GROUP D";
 
 var Team = [
   // Sat.
@@ -37,8 +37,8 @@ var Team = [
 
 // Sun.
   {
-    name:"KDF",
-    img:"Team/kdf.png"
+    name:"ROX",
+    img:"Team/rox.png"
   },
   {
     name:"AR",
@@ -49,8 +49,8 @@ var Team = [
     img:"Team/lsb.png"
   },
   {
-    name:"SRP",
-    img:"Team/srp.png"
+    name:"KDF",
+    img:"Team/kdf.png"
   },
 
 // Wed.
@@ -106,18 +106,18 @@ var TeamResult = [
 
   // Sun.
   {
-    name:"LSB",
-    img:"Team/lsb.png",
+    name:"KDF",
+    img:"Team/kdf.png",
     score: "2",
-  },
-  {
-    name:"SST",
-    img:"Team/sst.png",
-    score: "1",
   },
   {
     name:"AR",
     img:"Team/ar.png",
+    score: "0",
+  },
+  {
+    name:"LSB",
+    img:"Team/lsb.png",
     score: "2",
   },
   {
@@ -272,43 +272,43 @@ var PlayerResult = [
 
 
   {
-    name: "Hero",
-    img:"Player/Hero.png",
+    name: "Luning",
+    img:"Player/Luning.png",
     score: "50"
   },
   {
-    name: "HoJun",
-    img:"Player/HoJun.png",
-    score: "49"    
+    name: "JJONG",
+    img:"Player/JJONG.png",
+    score: "46"    
   },
   {
-    name: "SPEAR",
-    img:"Player/SPEAR.png",
-    score: "44"    
+    name: "Spell",
+    img:"Player/Spell.png",
+    score: "35"    
   },
   {
-    name: "Most",
-    img:"Player/Most.png",
-    score: "40"    
+    name: "JiMin",
+    img:"Player/JiMin.png",
+    score: "33"    
   },
   {
-    name: "MINSIK",
-    img:"Player/MINSIK.png",
-    score: "24"  
+    name: "Knock",
+    img:"Player/Knock.png",
+    score: "33"  
   },
   {
-    name: "ByungSu",
-    img:"Player/Speed.png",
-    score: "20"    
+    name: "Cosu",
+    img:"Player/Cosu.png",
+    score: "27"    
   },
   {
-    name: "Curren",
-    img:"Player/Curren.png",
-    score: "19"    
+    name: "Percent",
+    img:"Player/Percent.png",
+    score: "10"    
   },
   {
-    name: "Scarlet",
-    img:"Player/Scarlet.png",
-    score: "15"    
+    name: "Wave",
+    img:"Player/Wave.png",
+    score: "-2"    
   }
 ];

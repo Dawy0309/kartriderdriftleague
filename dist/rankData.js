@@ -1,12 +1,20 @@
-var updateTime = "Last Update: 06/24(Sat.)";
+var updateTime = "Last Update: 06/25(Sun.)";
 var teamRank = [
   {
-    name: "AURA",
-    img: "Team/ar.png",
-    win: "2",
+    name: "Liiv SANDBOX",
+    img: "Team/lsb.png",
+    win: "3",
     lose: "0",
-    set: "+3",
-    round: "+9"
+    set: "+4",
+    round: "+8"
+  },
+  {
+    name: "KWANGDONG FREECS",
+    img: "Team/kdf.png",
+    win: "3",
+    lose: "0",
+    set: "+4",
+    round: "+6"
   },
   {
     name: "Seongnam ROX",
@@ -15,23 +23,15 @@ var teamRank = [
     lose: "0",
     set: "+3",
     round: "+5"
-  },
+  }, 
   {
-    name: "KWANGDONG FREECS",
-    img: "Team/kdf.png",
+    name: "AURA",
+    img: "Team/ar.png",
     win: "2",
-    lose: "0",
-    set: "+2",
-    round: "+3"
-  },
-  {
-    name: "Liiv SANDBOX",
-    img: "Team/lsb.png",
-    win: "2",
-    lose: "0",
-    set: "+2",
-    round: "+3"
-  },  
+    lose: "1",
+    set: "+1",
+    round: "+6"
+  },      
   {
     name: "Sensation",
     img: "Team/sst.png",
@@ -39,14 +39,6 @@ var teamRank = [
     lose: "1",
     set: "+1",
     round: "+4"
-  },
-  {
-    name: "Seraphic",
-    img: "Team/srp.png",
-    win: "0",
-    lose: "2",
-    set: "-3",
-    round: "-8"
   },
   {
     name: "Potential",
@@ -63,6 +55,14 @@ var teamRank = [
     lose: "3",
     set: "-5",
     round: "-11"
+  },
+  {
+    name: "Seraphic",
+    img: "Team/srp.png",
+    win: "0",
+    lose: "3",
+    set: "-5",
+    round: "-13"
   },
   
 ];
