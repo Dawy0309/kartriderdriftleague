@@ -1,4 +1,4 @@
-var updateTime = "Last Update: 06/25(Sun.)";
+var updateTime = "Last Update: 06/28(Wed.)";
 var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",
@@ -8,7 +8,7 @@ var speedTrack = [
   {
     name: "World Tour: New York Rally",
     img: "Track/1.png",
-    record: "LSB JiMin 01:33.005",
+    record: "LSB ByungSu 01:32.799",
   },
   {
     name: "Glacier: Extreme Stadium",
@@ -23,7 +23,7 @@ var speedTrack = [
   {
     name: "Village: Boom Hill Tunnel",
     img: "Track/4.png",
-    record: "LSB NEAL 01:16.330",
+    record: "KDF Cool 01:15.942",
   },
   {
     name: "Mine: Three Shortcuts",
@@ -53,7 +53,7 @@ var speedTrack = [
   {
     name: "WKC: Japan Circuit",
     img: "Track/10.png",
-    record: "ROX DDING 02:00.099",
+    record: "AR Hero 01:59.167",
   },
   {
     name: "WKC: Singapore Circuit",

@@ -1,10 +1,10 @@
 var teamSatMatch = "07/01(Sat.) UTC+8 17:00";
 var teamSunMatch = "07/02(Sun.) UTC+8 17:00";
-var teamWedMatch = "06/28(Wed.) UTC+8 17:00";
+var teamWedMatch = "07/05(Wed.) UTC+8 17:00";
 
 var teamSatResult = "06/24(Sat.)";
 var teamSunResult = "06/25(Sun.)";
-var teamWedResult = "06/21(Wed.)";
+var teamWedResult = "06/28(Wed.)";
 
 var indSatMatch = "07/01(Sat.)";
 var indSunMatch = "07/02(Sun.)";
@@ -55,28 +55,28 @@ var Team = [
 
 // Wed.
   {
-    name:"AR",
-    img:"Team/ar.png"
+    name:"ST",
+    img:"Team/st.png"
   },
   {
     name:"LSB",
     img:"Team/lsb.png"
   },
   {
+    name:"PO",
+    img:"Team/po.png"
+  },
+  {
     name:"SST",
     img:"Team/sst.png"
   },
   {
+    name:"SRP",
+    img:"Team/srp.png"
+  },
+  {
     name:"ROX",
     img:"Team/rox.png"
-  },
-  {
-    name:"KDF",
-    img:"Team/kdf.png"
-  },
-  {
-    name:"ST",
-    img:"Team/st.png"
   }
   
 ];
@@ -128,33 +128,33 @@ var TeamResult = [
 
   // Wed.
   {
-    name:"KDF",
-    img:"Team/kdf.png",
-    score: "2",
-  },
-  {
-    name:"SRP",
-    img:"Team/srp.png",
-    score: "1",
-  },
-  {
-    name:"AR",
-    img:"Team/ar.png",
-    score: "2",
-  },
-  {
-    name:"ST",
-    img:"Team/st.png",
-    score: "1",
-  },
-  {
     name:"LSB",
     img:"Team/lsb.png",
     score: "2",
   },
   {
-    name:"PO",
-    img:"Team/po.png",
+    name:"AR",
+    img:"Team/ar.png",
+    score: "0",
+  },
+  {
+    name:"ROX",
+    img:"Team/rox.png",
+    score: "2",
+  },
+  {
+    name:"SST",
+    img:"Team/sst.png",
+    score: "0",
+  },
+  {
+    name:"ST",
+    img:"Team/st.png",
+    score: "2",
+  },
+  {
+    name:"KDF",
+    img:"Team/kdf.png",
     score: "1",
   }
 ];
