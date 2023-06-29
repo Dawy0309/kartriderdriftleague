@@ -148,14 +148,14 @@ var TeamResult = [
     score: "0",
   },
   {
-    name:"ST",
-    img:"Team/st.png",
+    name:"KDF",
+    img:"Team/kdf.png",
     score: "2",
   },
   {
-    name:"KDF",
-    img:"Team/kdf.png",
-    score: "1",
+    name:"ST",
+    img:"Team/st.png",
+    score: "0",
   }
 ];
 
