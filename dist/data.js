@@ -161,17 +161,17 @@ var TeamResult = [
 
 var Player = [
     {
+      name: "JiMin",
+      img:"Player/JiMin.png",
+    },
+    {
       name: "DDING",
       img:"Player/DDing.png",
     },
     {
       name: "Cool",
       img:"Player/Cool.png",
-    },
-    {
-      name: "JiMin",
-      img:"Player/JiMin.png",
-    },
+    },    
     {
       name: "World",
       img:"Player/World.png",
@@ -199,16 +199,16 @@ var Player = [
       img:"Player/Duzzi.png",
     },
     {
-      name: "HyunSu",
-      img:"Player/HyunSu.png",
-    },
-    {
       name: "HoJun",
       img:"Player/HoJun.png",
     },
     {
       name: "Most",
       img:"Player/Most.png",
+    },
+    {
+      name: "HyunSu",
+      img:"Player/HyunSu.png",
     },
     {
       name: "SUNGBIN",
