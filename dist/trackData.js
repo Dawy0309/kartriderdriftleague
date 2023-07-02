@@ -1,4 +1,4 @@
-var updateTime = "Last Update: 06/28(Wed.)";
+var updateTime = "Last Update: 07/02(Sun.)";
 var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",
@@ -13,7 +13,7 @@ var speedTrack = [
   {
     name: "Glacier: Extreme Stadium",
     img: "Track/2.png",
-    record: "ROX DDING 01:50.096",
+    record: "KDF Cool 01:49.742",
   },
   {
     name: "Desert: Construction Chaos",
@@ -38,7 +38,7 @@ var speedTrack = [
   {
     name: "Mine: Winding Slopes",
     img: "Track/7.png",
-    record: "AR Seize 01:17.428",
+    record: "ROX Duzzi 01:17.181",
   },
   {
     name: "Factory: Facility 5",
@@ -53,7 +53,7 @@ var speedTrack = [
   {
     name: "WKC: Japan Circuit",
     img: "Track/10.png",
-    record: "AR Hero 01:59.167",
+    record: "SST HoJun 01:59.125",
   },
   {
     name: "WKC: Singapore Circuit",
@@ -115,7 +115,7 @@ var indTrack = [
   {
     name: "Forest: Zigzag Timberland",
     img: "Track/ind/0.png",
-    record: "Spell 02:22.291",
+    record: "Luning 02:21.947",
   },
   {
     name: "World Tour: New York Rally",
@@ -145,27 +145,27 @@ var indTrack = [
   {
     name: "WKC: Brazil Circuit",
     img: "Track/ind/6.png",
-    record: "Joker 01:58.515",
+    record: "Hero 01:58.318",
   },
   {
     name: "Mine: Winding Slopes",
     img: "Track/ind/7.png",
-    record: "Hero 01:17.832",
+    record: "Cool 01:16.842",
   },
   {
     name: "Mine: Rickety Rails",
     img: "Track/ind/8.png",
-    record: "JiMin 01:38.852",
+    record: "Luning 01:38.582",
   },
   {
     name: "Desert: Ancient Aqueducts",
     img: "Track/ind/9.png",
-    record: "ByungSu 01:53.296",
+    record: "Luning 01:52.516",
   },
   {
     name: "World Tour: Rio de Ja-nitro",
     img: "Track/ind/10.png",
-    record: "DDING 01:13.432",
+    record: "DDING 01:13.138",
   },
   {
     name: "WKC: Korea Circuit",
