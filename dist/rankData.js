@@ -1,4 +1,4 @@
-var updateTime = "Last Update: 07/02(Sun.)";
+var updateTime = "Last Update: 07/05(Wed.)";
 var teamRank = [
   {
     name: "Seongnam ROX",
