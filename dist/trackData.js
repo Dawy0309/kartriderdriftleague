@@ -8,7 +8,7 @@ var speedTrack = [
   {
     name: "World Tour: New York Rally",
     img: "Track/1.png",
-    record: "LSB ByungSu 01:32.799",
+    record: "LSB ByungSu 01:32.656",
   },
   {
     name: "Glacier: Extreme Stadium",
@@ -33,7 +33,7 @@ var speedTrack = [
   {
     name: "WKC: Brazil Circuit",
     img: "Track/6.png",
-    record: "AR Luning 01:58.025",
+    record: "ROX Duzzi 01:58.017",
   },
   {
     name: "Mine: Winding Slopes",
