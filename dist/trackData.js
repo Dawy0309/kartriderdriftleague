@@ -1,9 +1,9 @@
-var updateTime = "Last Update: 07/05(Wed.)";
+var updateTime = "Last Update: 07/09(Sun.)";
 var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",
     img: "Track/0.png",
-    record: "SST Guard 02:21.447",
+    record: "LSB JiMin 02:21.086",
   },
   {
     name: "World Tour: New York Rally",
@@ -18,7 +18,7 @@ var speedTrack = [
   {
     name: "Desert: Construction Chaos",
     img: "Track/3.png",
-    record: "KDF SUNGBIN 02:08.604",
+    record: "AR Luning 02:07.866",
   },
   {
     name: "Village: Boom Hill Tunnel",
@@ -115,12 +115,12 @@ var indTrack = [
   {
     name: "Forest: Zigzag Timberland",
     img: "Track/ind/0.png",
-    record: "Luning 02:21.947",
+    record: "DDING 02:21.847",
   },
   {
     name: "World Tour: New York Rally",
     img: "Track/ind/1.png",
-    record: "Hong 01:33.382",
+    record: "JiMin 01:32.958",
   },
   {
     name: "Glacier: Extreme Stadium",
@@ -130,7 +130,7 @@ var indTrack = [
   {
     name: "Desert: Construction Chaos",
     img: "Track/ind/3.png",
-    record: "SUNGBIN 02:08.713",
+    record: "World 02:08.461",
   },
   {
     name: "Village: Boom Hill Tunnel",
@@ -140,12 +140,12 @@ var indTrack = [
   {
     name: "Mine: Three Shortcuts",
     img: "Track/ind/5.png",
-    record: "Luning 01:41.882",
+    record: "SPEAR 01:41.370",
   },
   {
     name: "WKC: Brazil Circuit",
     img: "Track/ind/6.png",
-    record: "Hero 01:58.318",
+    record: "Cool 01:57.995",
   },
   {
     name: "Mine: Winding Slopes",
