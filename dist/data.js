@@ -1,10 +1,10 @@
 var teamSatMatch = "07/15(Sat.) UTC+8 17:00";
 var teamSunMatch = "07/16(Sun.) UTC+8 17:00";
-var teamWedMatch = "07/12(Wed.) UTC+8 17:00";
+var teamWedMatch = "Regular Competition Ends";
 
 var teamSatResult = "07/08(Sat.)";
 var teamSunResult = "07/09(Sun.)";
-var teamWedResult = "07/05(Wed.)";
+var teamWedResult = "07/12(Wed.)";
 
 var indSatMatch = "07/15(Sat.)";
 var indSunMatch = "07/16(Sun.)";
@@ -19,20 +19,20 @@ var indSunResultTitle = "R.O.16 LOSERS' MATCH";
 var Team = [
   // Sat.
   {
-    name:"-",
-    img:"Team/kdl.png"
+    name:"KDF",
+    img:"Team/kdf.png"
   },
   {
-    name:"-",
-    img:"Team/kdl.png"
+    name:"SST",
+    img:"Team/sst.png"
   },
   {
-    name:"-",
-    img:"Team/kdl.png"
+    name:"ROX",
+    img:"Team/rox.png"
   },
   {
-    name:"-",
-    img:"Team/kdl.png"
+    name:"LSB",
+    img:"Team/lsb.png"
   },
 
 // Sun.
@@ -55,28 +55,28 @@ var Team = [
 
 // Wed.
   {
-    name:"SRP",
-    img:"Team/srp.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
-    name:"PO",
-    img:"Team/po.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
-    name:"KDF",
-    img:"Team/kdf.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
-    name:"ROX",
-    img:"Team/rox.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
-    name:"AR",
-    img:"Team/ar.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
-    name:"SST",
-    img:"Team/sst.png"
+    name:"-",
+    img:"Team/kdl.png"
   }
   
 ];
@@ -128,18 +128,8 @@ var TeamResult = [
 
   // Wed.
   {
-    name:"LSB",
-    img:"Team/lsb.png",
-    score: "2",
-  },
-  {
-    name:"ST",
-    img:"Team/st.png",
-    score: "1",
-  },
-  {
-    name:"SST",
-    img:"Team/sst.png",
+    name:"SRP",
+    img:"Team/srp.png",
     score: "2",
   },
   {
@@ -153,8 +143,18 @@ var TeamResult = [
     score: "2",
   },
   {
-    name:"SRP",
-    img:"Team/srp.png",
+    name:"KDF",
+    img:"Team/kdf.png",
+    score: "1",
+  },
+  {
+    name:"AR",
+    img:"Team/ar.png",
+    score: "2",
+  },
+  {
+    name:"SST",
+    img:"Team/sst.png",
     score: "1",
   }
 ];
