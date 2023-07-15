@@ -1,4 +1,4 @@
-var updateTime = "Last Update: 07/12(Wed.)";
+var updateTime = "Last Update: 07/15(Sat.)";
 var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",
@@ -33,7 +33,7 @@ var speedTrack = [
   {
     name: "WKC: Brazil Circuit",
     img: "Track/6.png",
-    record: "AR Knock 01:57.138",
+    record: "ROX DDING 01:56.875",
   },
   {
     name: "Mine: Winding Slopes",
@@ -53,7 +53,7 @@ var speedTrack = [
   {
     name: "WKC: Japan Circuit",
     img: "Track/10.png",
-    record: "SST HoJun 01:59.125",
+    record: "LSB NEAL 01:58.960",
   },
   {
     name: "WKC: Singapore Circuit",
