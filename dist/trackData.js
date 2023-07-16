@@ -3,7 +3,7 @@ var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",
     img: "Track/0.png",
-    record: "LSB JiMin 02:21.086",
+    record: "KDF SUNGBIN 02:20.382",
   },
   {
     name: "World Tour: New York Rally",
@@ -120,7 +120,7 @@ var indTrack = [
   {
     name: "World Tour: New York Rally",
     img: "Track/ind/1.png",
-    record: "JiMin 01:32.958",
+    record: "Cool 01:32.835",
   },
   {
     name: "Glacier: Extreme Stadium",

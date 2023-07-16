@@ -1,48 +1,48 @@
-var teamSatMatch = "07/15(Sat.) UTC+8 17:00";
-var teamSunMatch = "07/16(Sun.) UTC+8 17:00";
-var teamWedMatch = "Regular Competition Ends";
+var teamSatMatch = "07/23(Sun.) TEAM MATCH FINALS";
+var teamSunMatch = "REGULAR COMPETITION ENDS";
+var teamWedMatch = "REGULAR COMPETITION ENDS";
 
 var teamSatResult = "07/15(Sat.)";
-var teamSunResult = "07/09(Sun.)";
-var teamWedResult = "07/12(Wed.)";
+var teamSunResult = "07/16(Sun.)";
+var teamWedResult = "-";
 
-var indSatMatch = "07/15(Sat.)";
-var indSunMatch = "07/16(Sun.)";
-var indSatMatchTitle = "-";
-var indSunMatchTitle = "R.O.16 FINAL MATCH";
+var indSatMatch = "07/22(Sat.)";
+var indSunMatch = "-";
+var indSatMatchTitle = "SOLO MATCH FINALS";
+var indSunMatchTitle = "SOLO COMPETITION ENDS";
 
-var indSatResult = "07/08(Sat.)";
-var indSunResult = "07/09(Sun.)";
-var indSatResultTitle = "R.O.16 WINNERS' MATCH";
-var indSunResultTitle = "R.O.16 LOSERS' MATCH";
+var indSatResult = "07/16(Sun.)";
+var indSunResult = "-";
+var indSatResultTitle = "R.O.16 FINAL MATCH";
+var indSunResultTitle = "-";
 
 var Team = [
   // Sat.
   {
+    name:"LSB",
+    img:"Team/lsb.png"
+  },
+  {
     name:"KDF",
     img:"Team/kdf.png"
   },
   {
-    name:"SST",
-    img:"Team/sst.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
-    name:"ROX",
-    img:"Team/rox.png"
-  },
-  {
-    name:"LSB",
-    img:"Team/lsb.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
 
 // Sun.
   {
-    name:"ROX",
-    img:"Team/rox.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
-    name:"KDF",
-    img:"Team/kdf.png"
+    name:"-",
+    img:"Team/kdl.png"
   },
   {
     name:"-",
@@ -106,101 +106,79 @@ var TeamResult = [
 
   // Sun.
   {
-    name:"SST",
-    img:"Team/sst.png",
-    score: "2",
-  },
-  {
     name:"KDF",
     img:"Team/kdf.png",
-    score: "1",
-  },
-  {
-    name:"LSB",
-    img:"Team/lsb.png",
     score: "2",
   },
   {
     name:"ROX",
     img:"Team/rox.png",
+    score: "0",
+  },
+  {
+    name:"-",
+    img:"Team/kdl.png",
+    score: "0",
+  },
+  {
+    name:"-",
+    img:"Team/kdl.png",
     score: "0",
   },
 
   // Wed.
   {
-    name:"SRP",
-    img:"Team/srp.png",
-    score: "2",
-  },
-  {
-    name:"PO",
-    img:"Team/po.png",
+    name:"-",
+    img:"Team/kdl.png",
     score: "0",
   },
   {
-    name:"ROX",
-    img:"Team/rox.png",
-    score: "2",
+    name:"-",
+    img:"Team/kdl.png",
+    score: "0",
   },
   {
-    name:"KDF",
-    img:"Team/kdf.png",
-    score: "1",
+    name:"-",
+    img:"Team/kdl.png",
+    score: "0",
   },
   {
-    name:"AR",
-    img:"Team/ar.png",
-    score: "2",
+    name:"-",
+    img:"Team/kdl.png",
+    score: "0",
   },
   {
-    name:"SST",
-    img:"Team/sst.png",
-    score: "1",
+    name:"-",
+    img:"Team/kdl.png",
+    score: "0",
+  },
+  {
+    name:"-",
+    img:"Team/kdl.png",
+    score: "0",
   }
 ];
 
 var Player = [
     {
-      name: "-",
-      img:"Player/Unknown.png",
+      name: "DDING",
+      img:"Player/DDING.png",
     },
     {
-      name: "-",
-      img:"Player/Unknown.png",
+      name: "SPEAR",
+      img:"Player/SPEAR.png",
     },
     {
-      name: "-",
-      img:"Player/Unknown.png",
+      name: "World",
+      img:"Player/World.png",
     },
     {
-      name: "-",
-      img:"Player/Unknown.png",
+      name: "JiMin",
+      img:"Player/JiMin.png",
     },
     {
-      name: "-",
-      img:"Player/Unknown.png",
-    },
-    {
-      name: "-",
-      img:"Player/Unknown.png",
-    },
-    {
-      name: "-",
-      img:"Player/Unknown.png",
-    },
-    {
-      name: "-",
-      img:"Player/Unknown.png",
-    },
-
-
-    {
-      name: "Hero",
-      img:"Player/Hero.png",
-    },
-    {
-      name: "Luning",
-      img:"Player/Luning.png",
+      name: "SUNGBIN",
+      img:"Player/SUNGBIN.png",
     },
     {
       name: "Cool",
@@ -211,104 +189,126 @@ var Player = [
       img:"Player/NEAL.png",
     },
     {
-      name: "Duzzi",
-      img:"Player/Duzzi.png",
+      name: "Luning",
+      img:"Player/Luning.png",
+    },
+
+
+    {
+      name: "-",
+      img:"Player/Unknown.png",
     },
     {
-      name: "SUNGBIN",
-      img:"Player/SUNGBIN.png",
+      name: "-",
+      img:"Player/Unknown.png",
     },
     {
-      name: "HoJun",
-      img:"Player/HoJun.png",
+      name: "-",
+      img:"Player/Unknown.png",
     },
     {
-      name: "JJONG",
-      img:"Player/JJONG.png",
-    }
+      name: "-",
+      img:"Player/Unknown.png",
+    },
+    {
+      name: "-",
+      img:"Player/Unknown.png",
+    },
+    {
+      name: "-",
+      img:"Player/Unknown.png",
+    },
+    {
+      name: "-",
+      img:"Player/Unknown.png",
+    },
+    {
+      name: "-",
+      img:"Player/Unknown.png",
+    },
   ];
 
 var PlayerResult = [
   {
-    name: "DDING",
-    img:"Player/DDing.png",
-    score: "52"
+    name: "SUNGBIN",
+    img:"Player/SUNGBIN.png",
+    score: "51"
   },
   {
-    name: "SPEAR",
-    img:"Player/SPEAR.png",
-    score: "44"    
+    name: "Cool",
+    img:"Player/Cool.png",
+    score: "46"    
   },
   {
-    name: "World",
-    img:"Player/World.png",
-    score: "34"   
+    name: "NEAL",
+    img:"Player/NEAL.png",
+    score: "34"    
   },
   {
-    name: "JiMin",
-    img:"Player/JiMin.png",
+    name: "Luning",
+    img:"Player/Luning.png",
     score: "34"    
   },
   {
     name: "Hero",
     img:"Player/Hero.png",
-    score: "33"    
+    score: "34"  
   },
-  {
-    name: "Luning",
-    img:"Player/Luning.png",
-    score: "32"    
-  },
-  {
-    name: "Cool",
-    img:"Player/Cool.png",
-    score: "31"  
-  },
-  {
-    name: "NEAL",
-    img:"Player/NEAL.png",
-    score: "30"    
-  },
-
-
   {
     name: "Duzzi",
     img:"Player/Duzzi.png",
-    score: "53"
-  },
-  {
-    name: "SUNGBIN",
-    img:"Player/SUNGBIN.png",
-    score: "46"    
-  },
-  {
-    name: "HoJun",
-    img:"Player/HoJun.png",
-    score: "43"    
+    score: "27"    
   },
   {
     name: "JJONG",
     img:"Player/JJONG.png",
-    score: "39"    
+    score: "22"    
   },
   {
-    name: "Most",
-    img:"Player/Most.png",
-    score: "29"  
+    name: "HoJun",
+    img:"Player/HoJun.png",
+    score: "13"    
+  },
+
+  
+  {
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
   },
   {
-    name: "Joker",
-    img:"Player/Joker.png",
-    score: "26"    
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
   },
   {
-    name: "Spell",
-    img:"Player/Spell.png",
-    score: "23"    
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
   },
   {
-    name: "HyunSu",
-    img:"Player/HyunSu.png",
-    score: "2"    
-  }
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
+  },
+  {
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
+  },
+  {
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
+  },
+  {
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
+  },
+  {
+    name: "-",
+    img:"Player/Unknown.png",
+    score: "-"
+  },
 ];
