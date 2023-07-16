@@ -162,7 +162,7 @@ var TeamResult = [
 var Player = [
     {
       name: "DDING",
-      img:"Player/DDING.png",
+      img:"Player/DDing.png",
     },
     {
       name: "SPEAR",
