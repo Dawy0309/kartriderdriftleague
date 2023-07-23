@@ -1,4 +1,4 @@
-var updateTime = "Last Update: 07/15(Sat.)";
+var updateTime = "Last Update: 07/23(Sun.)";
 var speedTrack = [
   {
     name: "Forest: Zigzag Timberland",
@@ -8,7 +8,7 @@ var speedTrack = [
   {
     name: "World Tour: New York Rally",
     img: "Track/1.png",
-    record: "KDF Cool 01:32.256",
+    record: "LSB HyunSu 01:31.782",
   },
   {
     name: "Glacier: Extreme Stadium",
@@ -130,7 +130,7 @@ var indTrack = [
   {
     name: "Desert: Construction Chaos",
     img: "Track/ind/3.png",
-    record: "World 02:08.461",
+    record: "World 02:08.407",
   },
   {
     name: "Village: Boom Hill Tunnel",
@@ -140,12 +140,12 @@ var indTrack = [
   {
     name: "Mine: Three Shortcuts",
     img: "Track/ind/5.png",
-    record: "SPEAR 01:41.370",
+    record: "Luning 01:41.276",
   },
   {
     name: "WKC: Brazil Circuit",
     img: "Track/ind/6.png",
-    record: "Cool 01:57.995",
+    record: "Cool 01:57.162",
   },
   {
     name: "Mine: Winding Slopes",
